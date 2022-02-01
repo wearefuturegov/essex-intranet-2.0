@@ -1,0 +1,208 @@
+{% extends "layout.html" %}
+
+{% block pageTitle %}
+  Essex Intranet Prototype
+{% endblock %}
+
+{% block header %}
+  <!-- Blank header with no service name for the start page -->
+<div class="header">
+      <div class="topnav" style="width:85%">
+          <a href="index" class="logo"> <img class="" style="width: 264px" src="public/images/ecc_logo.svg"></a>
+          <div class="search-container">
+            <form action="/action_page.php">
+              <button type="submit"><img class="" style="width: 16px" src="public/images/icons/search-icon.svg">   Submit</button>
+              <input type="text" placeholder="Search.." name="search">
+            </form>
+          </div>
+      </div>
+</div>
+{% endblock %}
+
+{% block beforeContent %}
+  <div class="govuk-breadcrumbs">
+    <ol class="govuk-breadcrumbs__list">
+      <li class="govuk-breadcrumbs__list-item">
+        <a class="govuk-breadcrumbs__link" href="index">Home</a>
+      </li>
+      <li class="govuk-breadcrumbs__list-item">
+        <a class="govuk-breadcrumbs__link" href="level-01">Leave and time off</a>
+      </li>
+      <li class="govuk-breadcrumbs__list-item">
+        <a class="govuk-breadcrumbs__link" href="level-02">Annual leave</a>
+      </li>
+    </ol>
+  </div>
+{% endblock %}
+
+
+
+{% block content %}
+
+  <div class="govuk-grid-row">
+    <div class="govuk-grid-column-two-thirds" style="padding-right:40px">
+  <!-- Block text starts -->
+      <h1 class="govuk-heading-xl">
+        Book annual leave
+      </h1>
+      <p>Most employees must book annual leave through   <a href="https://fa-epwc-saasfaprod1.fa.ocs.oraclecloud.com/hcmUI/faces/FndOverview?fndGlobalItemNodeId=itemNode_my_information_absences1" target="_blank">My Oracle</a>.
+        <br>Sign in and select ‘Time and absences’ then ‘Add absence’.</p>
+
+      <button class="button button2">
+        <a href="https://fa-epwc-saasfaprod1.fa.ocs.oraclecloud.com/hcmUI/faces/FndOverview?fndGlobalItemNodeId=itemNode_my_information_absences1" target="_blank">Sign in to book annual leave</a>
+        <img class="" style="width: 24px;margin-left:12px;padding-top:0px" src="public/images/icons/external-link-icon.svg">
+      </button>
+
+  <!-- Block text ends -->
+
+  <!-- Block text starts -->
+
+  <div class="txtblock">
+      <h2>Key information</h2>
+      <ul class="">
+        <li>See how much annual leave you have left through <a href="https://fa-epwc-saasfaprod1.fa.ocs.oraclecloud.com/hcmUI/faces/FndOverview?fndGlobalItemNodeId=itemNode_my_information_absences1" target="_blank">My Oracle</a>.</li>
+        <li> <a href="#">Check your total annual leave days</a> here on the intranet</li>
+        <li>You can <a href="buy-leave">buy up to 5 more days annual leave</a> every year</li>
+        <li>Your manager will need to approve or decline each annual leave request</li>
+        <li>You must keep your annual leave balance up to date</li>
+      </ul>
+
+      <a href="#">Read our annual leave policy </a>
+  </div>
+  <!-- Block text ends -->
+
+  <!-- Block text starts -->
+  <div class="txtblock">
+      <h2>Bank holidays</h2>
+      <p>Full-time employees do not need to book bank holidays as annual leave.</p>
+      <p>Part-time employees who work fewer than 37 hours a week have a bank holiday allowance included in their annual leave entitlement for holiday.</p>
+      <p>If you work part-time, you should book annual leave on any bank holiday that falls on a day you would usually work.</p>
+      <a href="#">Read our bank holiday policy</a>
+  </div>
+  <!-- Block text ends -->
+
+  <!-- Block text starts -->
+  <div class="txtblock">
+      <h2>Christmas shutdown day</h2>
+      <p>If you are a full-time employee, you must book Christmas shutdown day as annual leave through MyOracle if it falls on a day you would normally work.</p>
+      <p>Christmas shutdown day is already included in your annual leave balance. </p>
+
+  </div>
+  <!-- Block text ends -->
+
+
+  <!-- Block text starts -->
+  <div class="txtblock">
+      <h2>Teachers and term-time employees</h2>
+      <p>
+          If you are a teacher or only work in term time, you do not need to use MyOracle.
+          You should take your annual leave during school holidays.
+      </p>
+  </div>
+  <!-- Block text ends -->
+
+  <!-- Block text starts -->
+  <div class="txtblock">
+      <h2>Before you book</h2>
+      <p>While you don’t have to, employees often speak to their manager before booking annual leave. It helps them work with you and the team to plan ahead for when you are away from work. Your manager can also book your annual leave for you.
+      </p>
+  </div>
+  <!-- Block text ends -->
+
+
+  <!-- Block text starts -->
+  <div class="txtblock">
+      <h2>Help with My Oracle</h2>
+      <p>Sign in to My Oracle and go to   <a href="https://login-epwc-saasfaprod1.fa.ocs.oraclecloud.com/" target="_blank">My Oracle Guidance Hub</a> to get help with booking, changing and checking your annual leave.</p>
+      <p>You can also contact support through the <a href="https://service.essex.gov.uk/assystnet/application.jsp#homepage" target="_blank">Assyst portal</a> or call <b>0333 013 5888</b>.​​</p>
+  </div>
+  <!-- Block text ends -->
+
+
+  <!-- Documents and Links hidden
+  <div class="txtblock" style="border-top: 5px solid #C69318;">
+    <h2>Documents and links</h2>
+    <ul>
+      <li><a href="#">Excel time recording spreadsheet</a></li>
+      <li><a href="#">Holiday Estimation Tool</a></li>
+      <li><a href="buy-leave">Buying Holiday</a></li>
+      <li><a href="#">Annual leave conversion table</a></li>
+    <li>  <a href="#">Payroll Data Exception Form</a></li>
+    </ul>
+  </div>
+-->
+
+    </div>
+
+    <div class="govuk-grid-column-one-third">
+
+      <aside class="app-related-items" role="complementary">
+        <h2 class="govuk-heading-m" id="subsection-title">
+          In this section
+        </h2>
+        <nav role="navigation" aria-labelledby="subsection-title">
+          <ul class="govuk-list govuk-!-font-size-16">
+            <li>
+              <a href="book-leave">
+                Book annual leave
+              </a>
+            </li>
+
+            <li>
+              <a href="#">
+                Change annual leave
+              </a>
+            </li>
+
+            <li>
+              <a href="buy-leave" class="govuk-!-font-weight-bold">
+                Buy more annual leave
+              </a>
+            </li>
+
+
+            <li>
+              <a href="#">
+                Carry over annual leave
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                How much annual leave you get
+              </a>
+            </li>
+
+
+            <li>
+              <a href="#" class="govuk-!-font-weight-bold">
+                Part-time and term-time employees
+              </a>
+            </li>
+
+            <li>
+              <a href="#">
+                Bank holidays and Christmas
+              </a>
+            </li>
+
+            <li>
+              <a href="#">
+                Illness while on annual leave
+              </a>
+            </li>
+
+            <li>
+              <a href="#" class="govuk-!-font-weight-bold">
+                Time off and leave policy
+              </a>
+            </li>
+          </ul>
+        </nav>
+      </aside>
+
+    </div>
+  </div>
+
+<div style="height:80px"></div>
+
+{% endblock %}

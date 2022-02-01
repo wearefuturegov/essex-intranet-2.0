@@ -1,0 +1,97 @@
+{% extends "layout.html" %}
+
+{% block pageTitle %}
+  Essex Intranet Prototype
+{% endblock %}
+
+{% block header %}
+  <!-- Blank header with no service name for the start page -->
+<div class="header">
+      <div class="topnav" style="width:85%">
+          <a href="index" class="logo"> <img class="" style="width: 264px" src="public/images/ecc_logo.svg"></a>
+          <div class="search-container">
+            <form action="/action_page.php">
+              <button type="submit"><img class="" style="width: 16px" src="public/images/icons/search-icon.svg">   Submit</button>
+              <input type="text" placeholder="Search.." name="search">
+            </form>
+          </div>
+      </div>
+</div>
+{% endblock %}
+
+{% block beforeContent %}
+  <div class="govuk-breadcrumbs">
+    <ol class="govuk-breadcrumbs__list">
+      <li class="govuk-breadcrumbs__list-item">
+        <a class="govuk-breadcrumbs__link" href="index">Home</a>
+      </li>
+
+    </ol>
+  </div>
+{% endblock %}
+
+{% block content %}
+<h1 class="govuk-heading-xl">Annual leave and time off</h1>
+<div class="govuk-grid-row">
+  <div class="govuk-grid-column-one-third">
+    <div class="card">
+      <div class="container">
+        <h3><a class="card-description" href="level-02.html">Annual leave</a></h3>
+        <p>Book leave, buy more leave, see how much annual leave you have</p>
+      </div>
+    </div>
+  </div>
+
+  <div class="govuk-grid-column-one-third">
+    <div class="card">
+      <div class="container">
+        <h3><a class="card-description" href="#">Sickness and absence</a></h3>
+        <p>What to do if you’re off sick, how much you’ll get paid, what to do when you’re ready to return to work</p>
+      </div>
+    </div>
+  </div>
+  <div class="govuk-grid-column-one-third">
+    <div class="card">
+      <div class="container">
+        <h3><a class="card-description" href="#">Parental leave</a></h3>
+        <p>Find out about maternity, paternity and adoption leave</p>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="govuk-grid-row">
+
+  <div class="govuk-grid-column-one-third">
+    <div class="card">
+      <div class="container">
+        <h3><a class="card-description" href="#">Unplanned time off</a></h3>
+        <p>What to do if you need to take emergency leave, compassionate leave or if you cannot get into the office</p>
+      </div>
+    </div>
+  </div>
+
+  <div class="govuk-grid-column-one-third">
+    <div class="card">
+      <div class="container">
+        <h3><a class="card-description" href="#">Volunteering and public service</a></h3>
+        <p>How to book time off for volunteering or other public duties, such as jury service and others</p>
+      </div>
+    </div>
+  </div>
+
+  <div class="govuk-grid-column-one-third">
+    <div class="card">
+      <div class="container">
+        <h3><a class="card-description" href="level-01.html">Extended leave</a></h3>
+        <p>Find out more about career breaks, flexible retirement and time off for studying and exams</p>
+      </div>
+    </div>
+  </div>
+
+</div>
+
+
+<div style="height:80px"></div>
+
+
+{% endblock %}

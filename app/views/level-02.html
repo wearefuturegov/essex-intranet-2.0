@@ -1,0 +1,137 @@
+{% extends "layout.html" %}
+
+{% block pageTitle %}
+  Essex Intranet Prototype
+{% endblock %}
+
+{% block header %}
+  <!-- Blank header with no service name for the start page -->
+
+<div class="header">
+      <div class="topnav" style="width:85%">
+          <a href="index" class="logo"> <img class="" style="width: 264px" src="public/images/ecc_logo.svg"></a>
+          <div class="search-container">
+            <form action="/action_page.php">
+              <button type="submit"><img class="" style="width: 16px" src="public/images/icons/search-icon.svg">   Submit</button>
+              <input type="text" placeholder="Search.." name="search">
+            </form>
+          </div>
+      </div>
+</div>
+{% endblock %}
+
+{% block beforeContent %}
+  <div class="govuk-breadcrumbs">
+    <ol class="govuk-breadcrumbs__list">
+      <li class="govuk-breadcrumbs__list-item">
+        <a class="govuk-breadcrumbs__link" href="index">Home</a>
+      </li>
+      <li class="govuk-breadcrumbs__list-item">
+        <a class="govuk-breadcrumbs__link" href="level-01">Leave and time off</a>
+      </li>
+
+    </ol>
+  </div>
+{% endblock %}
+
+{% block content %}
+<h1 class="govuk-heading-xl">Annual leave</h1>
+<div class="govuk-grid-row">
+  <div class="govuk-grid-column-one-third">
+    <div class="card">
+      <div class="container">
+        <h3><a class="card-description" href="book-leave.html">Book annual leave</a></h3>
+        <p>How to book annual leave and view our holiday policy</p>
+      </div>
+    </div>
+  </div>
+
+  <div class="govuk-grid-column-one-third">
+    <div class="card">
+      <div class="container">
+        <h3><a class="card-description" href="#">Change annual leave</a></h3>
+        <p>How to change your annual leave on My Oracle</p>
+      </div>
+    </div>
+  </div>
+
+  <div class="govuk-grid-column-one-third">
+    <div class="card">
+      <div class="container">
+        <h3><a class="card-description" href="buy-leave">Buy more<br>annual leave</a></h3>
+        <p>How to buy up to 5 more days annual leave, who can buy it and how it works</p>
+      </div>
+    </div>
+  </div>
+
+
+</div>
+<div class="govuk-grid-row">
+
+  <div class="govuk-grid-column-one-third">
+    <div class="card">
+      <div class="container">
+        <h3><a class="card-description" href="">Carry over<br>annual leave</a></h3>
+        <p>LFind out how much leave you can carry over to the next holiday year</p>
+      </div>
+    </div>
+  </div>
+
+
+  <div class="govuk-grid-column-one-third">
+    <div class="card">
+      <div class="container">
+        <h3><a class="card-description" href="">How much annual leave you get</a></h3>
+        <p>Find out how much annual leave you’re entitled to if you’re a full-time employee</p>
+      </div>
+    </div>
+  </div>
+
+
+
+  <div class="govuk-grid-column-one-third">
+    <div class="card">
+      <div class="container">
+        <h3><a class="card-description" href="#">Part-time and term-time employees</a></h3>
+        <p>Find out how much annual leave you’re entitled to if you’re not a full-time employee</p>
+      </div>
+    </div>
+  </div>
+
+</div>
+<div class="govuk-grid-row">
+
+  <div class="govuk-grid-column-one-third">
+    <div class="card">
+      <div class="container">
+        <h3><a class="card-description" href="">Bank holidays and Christmas</a></h3>
+        <p>Find out when the next bank holidays are and our Christmas shut down days</p>
+      </div>
+    </div>
+  </div>
+
+  <div class="govuk-grid-column-one-third">
+    <div class="card">
+      <div class="container">
+        <h3><a class="card-description" href="">Illness while on annual leave</a></h3>
+        <p>Find out what to do if you fall ill during your annual leave</p>
+      </div>
+    </div>
+  </div>
+
+  <div class="govuk-grid-column-one-third">
+    <div class="card">
+      <div class="container">
+        <h3><a class="card-description" href="">Time off and <br>leave policy</a></h3>
+        <p>If you need to take time off for caring, a bereavement or another reason, you may be able to take additional leave</p>
+      </div>
+    </div>
+  </div>
+
+
+</div>
+
+<div style="height:80px"></div>
+
+
+{% endblock %}

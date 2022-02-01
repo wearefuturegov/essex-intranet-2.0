@@ -1,0 +1,153 @@
+{% extends "layout.html" %}
+
+{% block pageTitle %}
+  Essex Intranet Prototype
+{% endblock %}
+
+
+
+{% block header %}
+  <!-- Blank header with no service name for the start page -->
+
+<div class="header">
+      <div class="topnav" style="width:85%">
+          <a href="index" class="logo"> <img class="" style="width: 264px" src="public/images/ecc_logo.svg"></a>
+          <div class="search-container">
+            <form action="/action_page.php">
+              <button type="submit"><img class="" style="width: 16px" src="public/images/icons/search-icon.svg">   Submit</button>
+              <input type="text" placeholder="Search.." name="search">
+            </form>
+          </div>
+      </div>
+</div>
+
+{% endblock %}
+
+
+
+{% block content %}
+
+
+
+<div class="govuk-grid-row">
+
+  <div class="govuk-grid-column-one-third">
+    <div class="card">
+      <img class="" style="width: 64px" src="public/images/icons/time-off-2.svg">
+      <div class="container">
+        <h3>
+          <a class="card-description" href="level-01.html">
+          Annual leave<br>and time off</a></h3>
+
+      </div>
+    </div>
+  </div>
+
+  <div class="govuk-grid-column-one-third">
+    <div class="card">
+      <img class="" style="width: 56px" src="public/images/icons/people.svg">
+      <div class="container">
+        <h3><a class="card-description" href="#">Financial and<br>people tools</a></h3>
+
+      </div>
+    </div>
+  </div>
+  <div class="govuk-grid-column-one-third">
+    <div class="card">
+      <img class="" style="width: 60px" src="public/images/icons/onboarding.svg">
+      <div class="container">
+        <h3><a class="card-description" href="#">Onboarding</a></h3>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="govuk-grid-row">
+
+  <div class="govuk-grid-column-one-third">
+    <div class="card">
+
+      <img class="" style="width: 64px" src="public/images/icons/covid.svg">
+      <div class="container">
+        <h3><a class="card-description" href="#">Coronavirus</a></h3>
+      </div>
+    </div>
+  </div>
+
+  <div class="govuk-grid-column-one-third">
+    <div class="card">
+      <img class="" style="width: 64px" src="public/images/icons/pay-and-benefits-2.svg">
+        <h3><a class="card-description" href="#">Pay, benefit<br>and rewards</a></h3>
+      </div>
+  </div>
+
+  <div class="govuk-grid-column-one-third">
+    <div class="card">
+      <img class="" style="width: 44px" src="public/images/icons/book-meeting-room.svg">
+        <h3><a class="card-description" href="#">Book a meeting room</a></h3>
+      </div>
+  </div>
+
+</div>
+
+
+  <div class="govuk-grid-row">
+
+    <div class="govuk-grid-column-one-third">
+      <div class="card">
+
+        <img class="" style="width: 44px" src="public/images/icons/phone.svg">
+        <div class="container">
+          <h3><a class="card-description" href="#">Telephone directory</a></h3>
+        </div>
+      </div>
+    </div>
+
+    <div class="govuk-grid-column-one-third">
+      <div class="card">
+        <img class="" style="width: 44px" src="public/images/icons/flexible-working.svg">
+          <h3><a class="card-description" href="#">Flexible working</a></h3>
+        </div>
+    </div>
+
+    <div class="govuk-grid-column-one-third">
+      <div class="card">
+        <img class="" style="width: 44px" src="public/images/icons/careers.svg">
+          <h3><a class="card-description" href="#">Internal careers portal</a></h3>
+        </div>
+    </div>
+
+  </div>
+
+  <div class="govuk-grid-row">
+
+    <div class="govuk-grid-column-one-third">
+      <div class="card">
+
+        <img class="" style="width: 44px" src="public/images/icons/expenses.svg">
+        <div class="container">
+          <h3><a class="card-description" href="#">Expenses</a></h3>
+        </div>
+      </div>
+    </div>
+
+    <div class="govuk-grid-column-one-third">
+      <div class="card">
+        <img class="" style="width: 44px" src="public/images/icons/learning.svg">
+          <h3><a class="card-description" href="#">Learning and development</a></h3>
+        </div>
+    </div>
+
+    <div class="govuk-grid-column-one-third">
+      <div class="card">
+        <img class="" style="width: 44px" src="public/images/icons/buying.svg">
+          <h3><a class="card-description" href="#">Buying goods<br>and services</a></h3>
+        </div>
+    </div>
+
+  </div>
+
+  <div style="height:80px"></div>
+
+
+{% endblock %}
