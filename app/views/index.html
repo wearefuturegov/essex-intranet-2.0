@@ -5,24 +5,27 @@
 {% endblock %}
 
 
-
+<!-- Custom header -->
 {% block header %}
-  <!-- Blank header with no service name for the start page -->
-
 <div class="header">
-      <div class="topnav" style="width:85%">
+
           <a href="index" class="logo"> <img class="" style="width: 264px" src="public/images/ecc_logo.svg"></a>
-          <div class="search-container">
-            <form action="/action_page.php">
-              <button type="submit"><img class="" style="width: 16px" src="public/images/icons/search-icon.svg">   Submit</button>
-              <input type="text" placeholder="Search.." name="search">
-            </form>
-          </div>
-      </div>
+</div>
+
+<div style="background-image: url('public/images/ecc-hero-large.png');
+width: 100vw;height: 175px;left: 0px;top: 44px;background-position-y: center;background-repeat:no-repeat">
+  <div class="topnav" style="width:85%">
+    <div class="search-container">
+      <form action="/action_page.php">
+        <button type="submit"><img class="" style="width: 16px" src="public/images/icons/search-icon.svg">   Submit</button>
+        <input type="text" placeholder="Search.." name="search">
+      </form>
+    </div>
+  </div>
 </div>
 
 {% endblock %}
-
+<!-- Custom header -->
 
 
 {% block content %}
@@ -146,6 +149,16 @@
     </div>
 
   </div>
+
+
+
+  <div class="govuk-grid-row">
+    <div class="govuk-grid-column-full">
+      <img class="" style="width: 60px" src="public/images/one-news.png">
+    </div>
+  </div>
+
+
 
   <div style="height:80px"></div>
 

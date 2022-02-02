@@ -35,7 +35,6 @@ div .txtblock {
 
 .topnav {
   overflow: hidden;
-
 	margin:auto;
 }
 
@@ -60,7 +59,10 @@ div .txtblock {
 }
 
 .topnav .search-container {
-  float: right;
+  position: absolute;
+  right: 36.4%;
+  top: 140px;
+
 
 }
 
@@ -240,6 +242,15 @@ input {
   //padding: 2px 16px;
 }
 
+.hero {
+  background-image: url('public/images/ecc-hero.jpg');
+  width: 100%;
+  height: 175px;left: 0px;
+  top: 44px;
+  background-position-y: center;
+  background-repeat:no-repeat;
+
+}
 
 /* Add rounded corners to the top left and the top right corner of the image */
 .card img {
@@ -253,7 +264,7 @@ input {
 .header {
   overflow: hidden;
   background-color: #E40037;
-  padding: 20px 10px;
+  padding: 5px 5px;
 }
 
 /* Style the header links */
