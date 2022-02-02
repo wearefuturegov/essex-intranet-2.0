@@ -5,11 +5,23 @@
 {% endblock %}
 
 
-<!-- Custom header -->
+<!-- Phase banner -->
 {% block header %}
-<div class="header">
+<div style="padding:8px">
+  <p class="govuk-phase-banner__content">
+    <strong class="govuk-tag govuk-phase-banner__content__tag">
+      alpha
+    </strong>
+    <span class="govuk-phase-banner__text">
+      This is a new service – your <a class="govuk-link" href="#">feedback</a> will help us to improve it.
+    </span>
+  </p>
+</div>
+<!-- Phase banner -->
 
-          <a href="index" class="logo"> <img class="" style="width: 264px" src="public/images/ecc_logo.svg"></a>
+<!-- Custom header -->
+<div class="header">
+    <a href="index" class="logo"> <img class="" style="width: 264px" src="public/images/ecc_logo.svg"></a>
 </div>
 
 <div style="background-image: url('public/images/ecc-hero-large.png');
@@ -23,7 +35,6 @@ width: 100vw;height: 175px;left: 0px;top: 44px;background-position-y: center;bac
     </div>
   </div>
 </div>
-
 {% endblock %}
 <!-- Custom header -->
 
