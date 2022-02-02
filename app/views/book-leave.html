@@ -7,8 +7,9 @@
 <!-- Custom header -->
 {% block header %}
 <div class="header">
-
-          <a href="index" class="logo"> <img class="" style="width: 264px" src="public/images/ecc_logo.svg"></a>
+  <a href="index" class="logo">
+    <img class="" alt="Essex County Council" style="width: 264px" src="public/images/ecc_logo.svg">
+  </a>
 </div>
 
 <div style="background-image: url('public/images/ecc-hero-large.png');
@@ -57,7 +58,7 @@ width: 100vw;height: 175px;left: 0px;top: 44px;background-position-y: center;bac
 
       <button class="button button2">
         <a href="https://fa-epwc-saasfaprod1.fa.ocs.oraclecloud.com/hcmUI/faces/FndOverview?fndGlobalItemNodeId=itemNode_my_information_absences1" target="_blank">Sign in to book annual leave</a>
-        <img class="" style="width: 24px;margin-left:12px;padding-top:0px" src="public/images/icons/external-link-icon.svg">
+        <img class="" alt="" style="width: 24px;margin-left:12px;padding-top:0px" src="public/images/icons/external-link-icon.svg">
       </button>
 
   <!-- Block text ends -->
@@ -207,6 +208,7 @@ width: 100vw;height: 175px;left: 0px;top: 44px;background-position-y: center;bac
         </nav>
       </aside>
 
+      {% include "includes/contact-help.html" %}
     </div>
   </div>
 
