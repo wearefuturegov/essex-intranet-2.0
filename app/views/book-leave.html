@@ -19,17 +19,14 @@
 <!-- Phase banner -->
 
 <!-- Custom header -->
-<div class="header">
-    <a href="index" class="logo"> <img class="" style="width: 264px" src="public/images/ecc_logo.svg"></a>
-      <p style="font-size:22px;padding-top:12px">intranet</p>
-</div>
+{% include 'includes/header.html' %}
 
 <!-- Hero begins -->
 <div class="hero">
   <div class="topnav">
     <div class="search-container">
       <form action="/action_page.php">
-        <button type="submit"><img class="" style="width: 16px" src="public/images/icons/search-icon.svg">   Submit</button>
+        <button type="submit"><img class="" alt="" style="width: 16px" src="public/images/icons/search-icon.svg">   Submit</button>
         <input type="text" placeholder="Search.." name="search">
       </form>
     </div>
@@ -71,7 +68,7 @@
 
       <button class="button button2">
         <a href="https://fa-epwc-saasfaprod1.fa.ocs.oraclecloud.com/hcmUI/faces/FndOverview?fndGlobalItemNodeId=itemNode_my_information_absences1" target="_blank">Sign in to book annual leave</a>
-        <img class="" style="width: 24px;margin-left:12px;padding-top:0px" src="public/images/icons/external-link-icon.svg">
+        <img class="" alt="" style="width: 24px;margin-left:12px;padding-top:0px" src="public/images/icons/external-link-icon.svg">
       </button>
 
   <!-- Block text ends -->
@@ -202,6 +199,7 @@
         </nav>
       </aside>
 
+      {% include "includes/contact-help.html" %}
     </div>
   </div>
 

@@ -19,10 +19,7 @@
 <!-- Phase banner -->
 
 <!-- Custom header -->
-<div class="header">
-    <a href="index" class="logo"> <img class="" style="width: 264px" src="public/images/ecc_logo.svg"></a>
-      <p style="font-size:22px;padding-top:12px">intranet</p>
-</div>
+{% include 'includes/header.html' %}
 
 <!-- Hero begins -->
 <div class="hero">
@@ -163,7 +160,7 @@
 </div>
 <!-- Block text ends -->
   <!-- Block text starts -->
-  <div class="txtblock"">
+  <div class="txtblock">
       <h2>Recording extra annual leave</h2>
       <p>
 You should record your extra annual leave locally. As it’s not part of your standard annual leave entitlement, it won’t show in your entitlement balance in <a href="https://login-epwc-saasfaprod1.fa.ocs.oraclecloud.com/" target="_blank">My Oracle</a>. ​
@@ -298,6 +295,7 @@ You should record your extra annual leave locally. As it’s not part of your st
         </nav>
       </aside>
 
+      {% include "includes/contact-help.html" %}
     </div>
 
   </div>
