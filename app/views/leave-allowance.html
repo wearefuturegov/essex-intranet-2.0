@@ -4,16 +4,29 @@
   Essex Intranet Prototype
 {% endblock %}
 
-<!-- Custom header -->
+<!-- Phase banner -->
 {% block header %}
-<div class="header">
+<div style="padding:8px">
+  <p class="govuk-phase-banner__content">
+    <strong class="govuk-tag govuk-phase-banner__content__tag">
+      alpha
+    </strong>
+    <span class="govuk-phase-banner__text">
+      This is a new service – your <a class="govuk-link" href="#">feedback</a> will help us to improve it.
+    </span>
+  </p>
+</div>
+<!-- Phase banner -->
 
-          <a href="index" class="logo"> <img class="" style="width: 264px" src="public/images/ecc_logo.svg"></a>
+<!-- Custom header -->
+<div class="header">
+    <a href="index" class="logo"> <img class="" style="width: 264px" src="public/images/ecc_logo.svg"></a>
+      <p style="font-size:22px;padding-top:12px">intranet</p>
 </div>
 
-<div style="background-image: url('public/images/ecc-hero-large.png');
-width: 100vw;height: 175px;left: 0px;top: 44px;background-position-y: center;background-repeat:no-repeat">
-  <div class="topnav" style="width:85%">
+<!-- Hero begins -->
+<div class="hero">
+  <div class="topnav">
     <div class="search-container">
       <form action="/action_page.php">
         <button type="submit"><img class="" style="width: 16px" src="public/images/icons/search-icon.svg">   Submit</button>
@@ -22,10 +35,27 @@ width: 100vw;height: 175px;left: 0px;top: 44px;background-position-y: center;bac
     </div>
   </div>
 </div>
+<!-- Hero ends -->
 
 {% endblock %}
+
 <!-- Custom header -->
 
+{% block beforeContent %}
+  <div class="govuk-breadcrumbs">
+    <ol class="govuk-breadcrumbs__list">
+      <li class="govuk-breadcrumbs__list-item">
+        <a class="govuk-breadcrumbs__link" href="index">Home</a>
+      </li>
+      <li class="govuk-breadcrumbs__list-item">
+        <a class="govuk-breadcrumbs__link" href="level-01">Leave and time off</a>
+      </li>
+      <li class="govuk-breadcrumbs__list-item">
+        <a class="govuk-breadcrumbs__link" href="level-02">Annual leave</a>
+      </li>
+    </ol>
+  </div>
+{% endblock %}
 
 
 {% block content %}
@@ -34,7 +64,7 @@ width: 100vw;height: 175px;left: 0px;top: 44px;background-position-y: center;bac
     <div class="govuk-grid-column-two-thirds" style="padding-right:40px">
   <!-- Block text starts -->
       <h1 class="govuk-heading-xl">
-        Buy more annual leave
+        Annual leave allowance
       </h1>
 
 
@@ -44,19 +74,20 @@ width: 100vw;height: 175px;left: 0px;top: 44px;background-position-y: center;bac
 
   <div class="txtblock">
       <p>
-        You can buy up to 5 days (37 hours) extra annual leave each year. If you work part-time, the maximum hours you can ask for is the same as the weekly hours in your contract. If you are on a term-time contract or have a contract that is less than 12 months, you are not eligible to buy more annual leave.</p>
+        How much annual leave you get is written in your contract. It depends on:
 
-        <h2>How to apply</h2>
-        <p>You must buy your extra annual leave through   <a href="https://fa-epwc-saasfaprod1.fa.ocs.oraclecloud.com/hcmUI/faces/FndOverview?fndGlobalItemNodeId=itemNode_my_information_absences1" target="_blank">
-          Buy more annual leave on My Oracle</a>. You can only buy leave between the following dates each year.</p>
+
+</p>
+
 
         <ul class="">
-          <li>1 to 24 March</li>
-          <li>1 September to 31 October</li>
+          <li>conditions of service</li>
+          <li>salary</li>
+          <li>length of service.</li>
         </ul>
         <button class="button button2">
           <a href="https://fa-epwc-saasfaprod1.fa.ocs.oraclecloud.com/hcmUI/faces/FndOverview?fndGlobalItemNodeId=itemNode_my_information_absences1" target="_blank">
-          Buy more annual leave on My Oracle</a>
+          Check annual leave allowance</a>
           <img class="" style="width: 24px;margin-left:12px;padding-top:0px" src="public/images/icons/external-link-icon.svg">
         </button>
   </div>
@@ -66,7 +97,7 @@ width: 100vw;height: 175px;left: 0px;top: 44px;background-position-y: center;bac
 <!-- Block text starts -->
 
   <div class="txtblock">
-        <p>See how to buy more annual leave on <a href="https://login-epwc-saasfaprod1.fa.ocs.oraclecloud.com" target="_blank">My Oracle Guidance Hub</a></p>
+        <p>Due to the various different types of contracts within the organisation, you can check your annual leave entitlement in our <a href="">Holiday Policy</a> (PDF, 165KB) or check your contract.</p>
   </div>
 
 <!-- Block text ends -->
@@ -74,14 +105,14 @@ width: 100vw;height: 175px;left: 0px;top: 44px;background-position-y: center;bac
 <!-- Block text starts -->
 
 <div class="txtblock">
-  <h2>Key information</h2>
+  <h2>Find out how much annual leave you currently have</h2>
+  <p>You can check how much holiday you have on My Oracle. Go to My Oracle, Time and Absences, Absence Balance.</p>
+
+  <p>Your absence balance is shown in hours and will include:</p>
   <ul class="">
-    <li>You give up or 'sacrifice' part of your salary in exchange for more annual leave, this is known as a salary sacrifice arrangement</li>
-    <li>Payments are made from your gross salary, so you pay no tax or national insurance on the value of the extra annual leave</li>
-    <li>If you are a member of the pension scheme, your contributions will be affected</li>
-    <li>The cost is spread equally over the remaining holiday year</li>
-    <li>You cannot get a refund once you have bought more annual leave</li>
-    <li>Speak to your line manager before buying annual leave</li>
+    <li>any holiday hours that you have bought</li>
+    <li>bank holiday hours if you work part-time</li>
+    <li>a deduction for any approved annual leave</li>
   </ul>
 </div>
 
@@ -250,36 +281,19 @@ You should record your extra annual leave locally. As it’s not part of your st
                 Carry over annual leave
               </a>
             </li>
-            <li>
-              <a href="#">
-                How much annual leave you get
-              </a>
+            <li class="active">
+
+                Annual leave allowance
+        
             </li>
 
 
             <li>
               <a href="#" class="govuk-!-font-weight-bold">
-                Part-time and term-time employees
+                Annual leave policy
               </a>
             </li>
 
-            <li>
-              <a href="#">
-                Bank holidays and Christmas
-              </a>
-            </li>
-
-            <li>
-              <a href="#">
-                Illness while on annual leave
-              </a>
-            </li>
-
-            <li>
-              <a href="#" class="govuk-!-font-weight-bold">
-                Time off and leave policy
-              </a>
-            </li>
           </ul>
         </nav>
       </aside>

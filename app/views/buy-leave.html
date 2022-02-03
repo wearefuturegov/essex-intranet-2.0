@@ -4,16 +4,29 @@
   Essex Intranet Prototype
 {% endblock %}
 
-<!-- Custom header -->
+<!-- Phase banner -->
 {% block header %}
-<div class="header">
+<div style="padding:8px">
+  <p class="govuk-phase-banner__content">
+    <strong class="govuk-tag govuk-phase-banner__content__tag">
+      alpha
+    </strong>
+    <span class="govuk-phase-banner__text">
+      This is a new service – your <a class="govuk-link" href="#">feedback</a> will help us to improve it.
+    </span>
+  </p>
+</div>
+<!-- Phase banner -->
 
-          <a href="index" class="logo"> <img class="" style="width: 264px" src="public/images/ecc_logo.svg"></a>
+<!-- Custom header -->
+<div class="header">
+    <a href="index" class="logo"> <img class="" style="width: 264px" src="public/images/ecc_logo.svg"></a>
+      <p style="font-size:22px;padding-top:12px">intranet</p>
 </div>
 
-<div style="background-image: url('public/images/ecc-hero-large.png');
-width: 100vw;height: 175px;left: 0px;top: 44px;background-position-y: center;background-repeat:no-repeat">
-  <div class="topnav" style="width:85%">
+<!-- Hero begins -->
+<div class="hero">
+  <div class="topnav">
     <div class="search-container">
       <form action="/action_page.php">
         <button type="submit"><img class="" style="width: 16px" src="public/images/icons/search-icon.svg">   Submit</button>
@@ -22,8 +35,10 @@ width: 100vw;height: 175px;left: 0px;top: 44px;background-position-y: center;bac
     </div>
   </div>
 </div>
+<!-- Hero ends -->
 
 {% endblock %}
+
 <!-- Custom header -->
 
 {% block beforeContent %}
@@ -211,10 +226,10 @@ You should record your extra annual leave locally. As it’s not part of your st
               </a>
             </li>
 
-            <li>
-              <a href="buy-leave" class="govuk-!-font-weight-bold">
+            <li class="active">
+
                 Buy more annual leave
-              </a>
+        
             </li>
 
 
@@ -224,35 +239,18 @@ You should record your extra annual leave locally. As it’s not part of your st
               </a>
             </li>
             <li>
-              <a href="#">
-                How much annual leave you get
+              <a href="leave-allowance">
+                Annual leave allowance
               </a>
             </li>
 
 
             <li>
               <a href="#" class="govuk-!-font-weight-bold">
-                Part-time and term-time employees
+                Annual leave policy
               </a>
             </li>
 
-            <li>
-              <a href="#">
-                Bank holidays and Christmas
-              </a>
-            </li>
-
-            <li>
-              <a href="#">
-                Illness while on annual leave
-              </a>
-            </li>
-
-            <li>
-              <a href="#" class="govuk-!-font-weight-bold">
-                Time off and leave policy
-              </a>
-            </li>
           </ul>
         </nav>
       </aside>

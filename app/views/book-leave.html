@@ -4,27 +4,43 @@
   Essex Intranet Prototype
 {% endblock %}
 
-<!-- Custom header -->
+<!-- Phase banner -->
 {% block header %}
+<div style="padding:8px">
+  <p class="govuk-phase-banner__content">
+    <strong class="govuk-tag govuk-phase-banner__content__tag">
+      alpha
+    </strong>
+    <span class="govuk-phase-banner__text">
+      This is a new service – your <a class="govuk-link" href="#">feedback</a> will help us to improve it.
+    </span>
+  </p>
+</div>
+<!-- Phase banner -->
+
+<!-- Custom header -->
 <div class="header">
   <a href="index" class="logo">
     <img class="" alt="Essex County Council" style="width: 264px" src="public/images/ecc_logo.svg">
   </a>
+  <p style="font-size:22px;padding-top:12px">intranet</p>
 </div>
 
-<div style="background-image: url('public/images/ecc-hero-large.png');
-width: 100vw;height: 175px;left: 0px;top: 44px;background-position-y: center;background-repeat:no-repeat">
-  <div class="topnav" style="width:85%">
+<!-- Hero begins -->
+<div class="hero">
+  <div class="topnav">
     <div class="search-container">
       <form action="/action_page.php">
-        <button type="submit"><img class="" style="width: 16px" src="public/images/icons/search-icon.svg">   Submit</button>
+        <button type="submit"><img class="" alt="" style="width: 16px" src="public/images/icons/search-icon.svg">   Submit</button>
         <input type="text" placeholder="Search.." name="search">
       </form>
     </div>
   </div>
 </div>
+<!-- Hero ends -->
 
 {% endblock %}
+
 <!-- Custom header -->
 
 {% block beforeContent %}
@@ -53,8 +69,7 @@ width: 100vw;height: 175px;left: 0px;top: 44px;background-position-y: center;bac
       <h1 class="govuk-heading-xl">
         Book annual leave
       </h1>
-      <p>Most employees must book annual leave through   <a href="https://fa-epwc-saasfaprod1.fa.ocs.oraclecloud.com/hcmUI/faces/FndOverview?fndGlobalItemNodeId=itemNode_my_information_absences1" target="_blank">My Oracle</a>.
-        <br>Sign in and select ‘Time and absences’ then ‘Add absence’.</p>
+      <p>All employees must book annual leave through <b>My Oracle</b>, except teachers and term-time employees. Sign in and select ‘Time and absences’ then ‘Add absence’.</p>
 
       <button class="button button2">
         <a href="https://fa-epwc-saasfaprod1.fa.ocs.oraclecloud.com/hcmUI/faces/FndOverview?fndGlobalItemNodeId=itemNode_my_information_absences1" target="_blank">Sign in to book annual leave</a>
@@ -150,10 +165,8 @@ width: 100vw;height: 175px;left: 0px;top: 44px;background-position-y: center;bac
         </h2>
         <nav role="navigation" aria-labelledby="subsection-title">
           <ul class="govuk-list govuk-!-font-size-16">
-            <li>
-              <a href="book-leave">
-                Book annual leave
-              </a>
+            <li class="active">
+              Book annual leave
             </li>
 
             <li>
@@ -175,35 +188,18 @@ width: 100vw;height: 175px;left: 0px;top: 44px;background-position-y: center;bac
               </a>
             </li>
             <li>
-              <a href="#">
-                How much annual leave you get
+              <a href="leave-allowance">
+                Annual leave allowance
               </a>
             </li>
 
 
             <li>
               <a href="#" class="govuk-!-font-weight-bold">
-                Part-time and term-time employees
+                Annual leave policy
               </a>
             </li>
 
-            <li>
-              <a href="#">
-                Bank holidays and Christmas
-              </a>
-            </li>
-
-            <li>
-              <a href="#">
-                Illness while on annual leave
-              </a>
-            </li>
-
-            <li>
-              <a href="#" class="govuk-!-font-weight-bold">
-                Time off and leave policy
-              </a>
-            </li>
           </ul>
         </nav>
       </aside>
