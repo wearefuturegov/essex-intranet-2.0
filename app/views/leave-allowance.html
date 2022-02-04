@@ -71,7 +71,8 @@
 
   <div class="txtblock">
       <p>
-        How much annual leave you get is written in your contract. It depends on:
+        How much annual leave you get is written in your contract.
+        <br>It depends on:
 
 
 </p>
@@ -82,28 +83,86 @@
           <li>salary</li>
           <li>length of service.</li>
         </ul>
-        <button class="button button2">
-          <a href="https://fa-epwc-saasfaprod1.fa.ocs.oraclecloud.com/hcmUI/faces/FndOverview?fndGlobalItemNodeId=itemNode_my_information_absences1" target="_blank">
-          Check annual leave allowance</a>
-          <img class="" style="width: 24px;margin-left:12px;padding-top:0px" src="public/images/icons/external-link-icon.svg">
-        </button>
+        <p>Due to the various different types of contracts within the organisation, you can check your annual leave entitlement in our <a href="#" target="_blank">Holiday Policy</a> (PDF, 165KB) or check your contract.</p>
+
   </div>
 
 <!-- Block text ends -->
 
-<!-- Block text starts -->
 
-  <div class="txtblock">
-        <p>Due to the various different types of contracts within the organisation, you can check your annual leave entitlement in our <a href="">Holiday Policy</a> (PDF, 165KB) or check your contract.</p>
-  </div>
 
-<!-- Block text ends -->
+<!-- Block Calculator starts -->
+
+  <div class="txtblock calculator"  style="" >
+    <div class="govuk-form-group">
+      <fieldset class="govuk-fieldset">
+        <legend class="govuk-fieldset__legend govuk-fieldset__legend--l">
+          <h3 style="padding-left:50px">Holiday allowance calculator</h3>
+        </legend>
+        <div class="govuk-radios" data-module="govuk-radios">
+          <p><b>What's your employment contract based on?</b></p>
+
+          <div class="govuk-radios__item">
+            <input class="govuk-radios__input" id="contract-type" name="contract-type" type="radio" value="1">
+            <label class="govuk-label govuk-radios__label" for="1">
+              days worked per week
+            </label>
+          </div>
+
+          <div class="govuk-radios__item">
+            <input class="govuk-radios__input" id="contract-type" name="contract-type" type="radio" value="2">
+            <label class="govuk-label govuk-radios__label" for="2">
+              hours worked per week
+            </label>
+          </div>
+          <div class="govuk-radios__item">
+            <input class="govuk-radios__input" id="contract-type" name="contract-type" type="radio" value="3">
+            <label class="govuk-label govuk-radios__label" for="3">
+              casual or irregular hours, including zero hours contracts
+            </label>
+          </div>
+
+          <div class="govuk-radios__item">
+            <input class="govuk-radios__input" id="contract-type" name="contract-type" type="radio" value="4">
+            <label class="govuk-label govuk-radios__label" for="4">
+              annualised hours
+            </label>
+          </div>
+          <div class="govuk-radios__item">
+            <input class="govuk-radios__input" id="contract-type" name="contract-type" type="radio" value="5">
+            <label class="govuk-label govuk-radios__label" for="5">
+              compressed hours
+            </label>
+          </div>
+
+          <div class="govuk-radios__item">
+            <input class="govuk-radios__input" id="contract-type" name="contract-type" type="radio" value="6">
+            <label class="govuk-label govuk-radios__label" for="where-do-you-live">
+              shifts
+            </label>
+          </div>
+
+      </fieldset>
+    </div>
+
+  <form id="form">
+
+
+<p></p>
+    <input type="submit" value="Continue" class="button button2" style="height:50px">
+
+  </form>
+
+
+</div>
+<!-- Block Calculator ends -->
+
 
 <!-- Block text starts -->
 
 <div class="txtblock">
   <h2>Find out how much annual leave you currently have</h2>
-  <p>You can check how much holiday you have on My Oracle. Go to My Oracle, Time and Absences, Absence Balance.</p>
+  <p>You can check how much holiday you have on <b>My Oracle</b>. Go to My Oracle, Time and Absences, Absence Balance.</p>
 
   <p>Your absence balance is shown in hours and will include:</p>
   <ul class="">
@@ -111,79 +170,13 @@
     <li>bank holiday hours if you work part-time</li>
     <li>a deduction for any approved annual leave</li>
   </ul>
+
+  <button class="button button2">
+    <a href="https://fa-epwc-saasfaprod1.fa.ocs.oraclecloud.com/hcmUI/faces/FndOverview?fndGlobalItemNodeId=itemNode_my_information_absences1" target="_blank">
+    Check annual leave allowance</a>
+    <img class="" style="width: 24px;margin-left:12px;padding-top:0px" src="public/images/icons/external-link-icon.svg">
+  </button>
 </div>
-
-
-  <!-- Block text ends -->
-
-  <!-- Block text starts -->
-
-  <div class="txtblock"  style="background-color:#f3f2f1;padding:20px;border-radius: 10px;" >
-
-  <form id="form">
-    <div>
-      <h2>Buying annual leave cost calculator</h2>
-      <p>Use this calculator to work out the total cost and cost per day of buying more annual leave.</p>
-
-      <label>
-        <p style="padding: 0px 0 0px 0">What is your salary?</p>
-        <input type="number" id="salary" min="0" required>
-      </label>
-    </div>
-
-    <div>
-      <label>
-        <p style="padding: 30px 0 0px 0">How long is your work agreement in months?</p>
-        <input type="number" style="width:50px" id="months" style="" min="0" max="12" required value='12'>
-      </label>
-    </div>
-
-    <div>
-      <label>
-        <p style="padding: 30px 0 0px 0">How many days of annual leave do you want to buy?</p>
-        <input type="number" style="width:50px"  id="holidayLength" min="0">
-      </label>
-    </div>
-
-<p></p>
-    <input type="submit" value="Calculate" class="button button2" style="height:50px">
-
-</form>
-<p></p>
-<div id="daily"></div>
-<div id="total"></div>
-
-
-
-
-
-</div>
-<!-- Block text ends -->
-  <!-- Block text starts -->
-  <div class="txtblock">
-      <h2>Recording extra annual leave</h2>
-      <p>
-You should record your extra annual leave locally. As it’s not part of your standard annual leave entitlement, it won’t show in your entitlement balance in <a href="https://login-epwc-saasfaprod1.fa.ocs.oraclecloud.com/" target="_blank">My Oracle</a>. ​
-      </p>
-
-
-  </div>
-  <!-- Block text ends -->
-
-  <!-- Block text starts -->
-  <div class="txtblock">
-      <h2>Guidance for line managers</h2>
-      <a href="public/images/Holiday_buying_additional_line_manager_guide.pdf" target="_blank" >
-      <img src="public/images/icons/arrow.svg" style="margin:0px 8px 0 0">View and download pdf guidance</a>
-  </div>
-  <!-- Block text ends -->
-
-  <!-- Block text starts -->
-  <div class="txtblock">
-      <h2>Help with My Oracle</h2>
-      <p>Sign in to My Oracle and go to   <a href="https://login-epwc-saasfaprod1.fa.ocs.oraclecloud.com/" target="_blank">My Oracle Guidance Hub</a>  get help with buying more annual leave.</p>
-      <p>You can contact support through the <a href="">Assyst portal</a> or call <b>0333 013 5888</b>.​​</p>
-  </div>
   <!-- Block text ends -->
 
 
@@ -195,54 +188,101 @@ You should record your extra annual leave locally. As it’s not part of your st
     <div class="govuk-accordion__section-header">
       <h2 class="govuk-accordion__section-heading">
         <span class="govuk-accordion__section-button" id="accordion-default-heading-1">
-          Writing well for the web
+          Additional annual leave
         </span>
       </h2>
     </div>
     <div id="accordion-default-content-1" class="govuk-accordion__section-content" aria-labelledby="accordion-default-heading-1">
-      <p class='govuk-body'>This is the content for Writing well for the web.</p>
+      <p class='govuk-body'>You’re allowed to <a href="#">carry over some annual leave to the following year</a>. This will be included in your balance.
+      <p>You can also <a href="buy-leave">buy more holiday</a>. This will be included in your balance.</p>
+      <p>Managers may award up to two extra day’s holiday for employees who demonstrate an exceptional level of performance.  This is managed between you and your line manager, and not included in your balance.</p>
+
+
     </div>
   </div>
   <div class="govuk-accordion__section ">
     <div class="govuk-accordion__section-header">
       <h2 class="govuk-accordion__section-heading">
         <span class="govuk-accordion__section-button" id="accordion-default-heading-2">
-          Writing well for specialists
+          Annual leave and maternity or shared parental leave
         </span>
       </h2>
     </div>
     <div id="accordion-default-content-2" class="govuk-accordion__section-content" aria-labelledby="accordion-default-heading-2">
-      <p class='govuk-body'>This is the content for Writing well for specialists.</p>
+      <p class='govuk-body'>Your annual leave entitlement builds up each month during your first year of employment. This is at a rate of 1/12th of your annual leave entitlement.  </p>
+      <p>If you book annual leave during your first month, you may be restricted by the amount of leave that has been built up.
+      Your line manager may allow you to take more, subject to operational requirements.  </p>
+      <p>We will try to honour commitments to pre-booked holidays.  </p>
+      <p>After your first year, you can take your full leave entitlement from the beginning of the leave year. </p>
+
     </div>
   </div>
   <div class="govuk-accordion__section ">
     <div class="govuk-accordion__section-header">
       <h2 class="govuk-accordion__section-heading">
         <span class="govuk-accordion__section-button" id="accordion-default-heading-3">
-          Know your audience
+          Annual leave for new starters
         </span>
       </h2>
     </div>
     <div id="accordion-default-content-3" class="govuk-accordion__section-content" aria-labelledby="accordion-default-heading-3">
-      <p class='govuk-body'>This is the content for Know your audience.</p>
+      <p>Your annual leave entitlement builds up each month during your first year of employment. This is at a rate of 1/12th of your annual leave entitlement.</p>
+      <p>If you book annual leave during your first month, you may be restricted by the amount of leave that has been built up.
+      Your line manager may allow you to take more, subject to operational requirements.</p>
+      <p>We will try to honour commitments to pre-booked holidays.</p>
+      <p>After your first year, you can take your full leave entitlement from the beginning of the leave year. </p>
     </div>
   </div>
   <div class="govuk-accordion__section ">
     <div class="govuk-accordion__section-header">
       <h2 class="govuk-accordion__section-heading">
         <span class="govuk-accordion__section-button" id="accordion-default-heading-4">
-          How people read
+          Annual leave for leavers
         </span>
       </h2>
     </div>
     <div id="accordion-default-content-4" class="govuk-accordion__section-content" aria-labelledby="accordion-default-heading-4">
-      <p class='govuk-body'>This is the content for How people read.</p>
+      <p>Your annual leave entitlement builds up each month during your first year of employment. This is at a rate of 1/12th of your annual leave entitlement.</p>
+      <p>If you book annual leave during your first month, you may be restricted by the amount of leave that has been built up.  </p>
+      <p>Your line manager may allow you to take more, subject to operational requirements.</p>
+      <p>We will try to honour commitments to pre-booked holidays.  </p>
+      <p>After your first year, you can take your full leave entitlement from the beginning of the leave year.</p>
+      <p>After your first year, you can take your full leave entitlement from the beginning of the leave year.</p>
     </div>
   </div>
-</div>
 
+  <div class="govuk-accordion__section ">
+    <div class="govuk-accordion__section-header">
+      <h2 class="govuk-accordion__section-heading">
+        <span class="govuk-accordion__section-button" id="accordion-default-heading-4">
+          Annual leave for leavers
+        </span>
+      </h2>
+    </div>
+    <div id="accordion-default-content-4" class="govuk-accordion__section-content" aria-labelledby="accordion-default-heading-4">
+      <p>Your annual leave entitlement builds up each month during your first year of employment. This is at a rate of 1/12th of your annual leave entitlement.</p>
+      <p>If you book annual leave during your first month, you may be restricted by the amount of leave that has been built up.
+        <p>Your line manager may allow you to take more, subject to operational requirements.</p>
+        <p>We will try to honour commitments to pre-booked holidays.</p>
+        <p>After your first year, you can take your full leave entitlement from the beginning of the leave year. </p>
+
+    </div>
+  </div>
+
+
+
+</div>
   </div>
 <!-- Block text ends -->
+
+<!-- Block text starts -->
+<div class="txtblock">
+    <h2>Guidance for line managers</h2>
+    <a href="public/images/Holiday_buying_additional_line_manager_guide.pdf" target="_blank" >
+    <img src="public/images/icons/arrow.svg" style="margin:0px 8px 0 0">View and download pdf guidance</a>
+</div>
+<!-- Block text ends -->
+
 
 
     </div>
@@ -281,7 +321,7 @@ You should record your extra annual leave locally. As it’s not part of your st
             <li class="active">
 
                 Annual leave allowance
-        
+
             </li>
 
 

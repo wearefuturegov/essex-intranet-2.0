@@ -339,6 +339,18 @@ input {
 	background-repeat:no-repeat;
 }
 
+.calculator{
+	background: #F2EEF4;
+	//border-color:#F3F2F1;
+	//border: solid 3px #DDDDDD;
+	padding:24px;
+	border-radius: 8px;
+	background-image: url('../../public/images/icons/icon-calculator.svg');
+	background-position: 16px 16px;
+	background-repeat:no-repeat;
+
+}
+
 /* Style the logo link (notice that we set the same value of line-height and font-size to prevent the header to increase when the font gets bigger */
 .header a.logo {
   font-size: 25px;
@@ -381,7 +393,14 @@ input {
 * {
   box-sizing: border-box;
 }
-
+.govuk-radios__item
+{
+	border-color:#ff9900;
+}
+.govuk-label
+{
+	font-family: Lexend, calibri, helvetica;
+}
 form.example input[type=text] {
   padding: 10px;
   font-size: 17px;
