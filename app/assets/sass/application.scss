@@ -135,6 +135,16 @@ div .txtblock {
   cursor: pointer;
   -webkit-transition-duration: 0.4s; /* Safari */
   transition-duration: 0.4s;
+	border-radius: 5px;
+}
+
+
+.button a:hover{
+  color:white;
+}
+
+.button a:visited{
+  color:white;
 }
 
 .button1 {
@@ -221,11 +231,11 @@ color:#2E65B7;
 }
 
 
-/* visited link
+
 a:visited {
   color: #2E65b7;
 }
-*/
+
 /* mouse over link */
 a:hover {
   color: #1571FB;
@@ -320,10 +330,10 @@ input {
 .key
 {
 	background: #F3F2F1;
-	padding:20px;
+	padding:24px;
 	border-radius: 8px;
 	background-image: url('../../public/images/icons/key-info.svg');
-	background-position: 10px 10px;
+	background-position: 16px 16px;
 	background-repeat:no-repeat;
 }
 
