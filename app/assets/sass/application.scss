@@ -204,6 +204,7 @@ font-size: 18px;
 line-height:160%;
 padding-left:8px;
 }
+
 .active {
 	text-decoration:none;
 	padding:4px 4px 4px 8px ;
@@ -218,7 +219,25 @@ font-style: medium;
 font-weight: 600;
 font-size: 18px;
 line-height: 160%;
+color:#2E65B7;
 }
+
+
+/* visited link
+a:visited {
+  color: #2E65b7;
+}
+*/
+/* mouse over link */
+a:hover {
+  color: #1571FB;
+}
+
+/* selected link */
+a:active {
+  color: blue;
+}
+
 
 govuk-breadcrumbs a{
 	font-weight:300;
@@ -297,6 +316,17 @@ input {
   font-size: 18px;
   line-height: 25px;
   border-radius: 4px;
+}
+/* Key info style*/
+
+.key
+{
+	background: #F3F2F1;
+	padding:20px;
+	border-radius: 8px;
+	background-image: url('../../public/images/icons/key-info.svg');
+	background-position: 10px 10px;
+	background-repeat:no-repeat;
 }
 
 /* Style the logo link (notice that we set the same value of line-height and font-size to prevent the header to increase when the font gets bigger */
