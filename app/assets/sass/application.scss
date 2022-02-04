@@ -215,13 +215,6 @@ line-height:160%;
 padding-left:8px;
 }
 
-.active {
-	text-decoration:none;
-	padding:4px 4px 4px 8px ;
-	background-color:#F3F2F1;
-	font-weight: bold;
-	border-radius: 5px;
-}
 
 a {
 font-family: Lexend, calibri, helvetica;
@@ -247,6 +240,15 @@ a:hover {
 a:active {
   color: blue;
 }
+
+.active {
+	text-decoration:none;
+	padding:4px 4px 4px 8px ;
+	background-color:#F4E9D1;
+	font-weight: bold;
+	border-radius: 5px;
+}
+
 
 
 govuk-breadcrumbs a{
