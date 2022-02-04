@@ -261,26 +261,38 @@ input {
 
 
 .card p {
-  font-size:17px;
+	font-size:16px;
 	font-family: Lexend, calibri, helvetica;
+	line-height:24px;
 }
 
 /* Lazy Load Styles */
 .card {
 	//display: inline-block;
-	width: 98%;
 	//max-width: 20rem;
+	width: 99%;
 	margin: 1rem;
 	font-size: 30px;
 	text-decoration: none;
 	overflow: hidden;
+	transition: transform 0.1s ease-in-out, box-shadow 0.1s;
+  padding: 16px;
+	height:240px;
 	box-shadow: 0 0 2rem -1rem rgba(0,0,0,0.3);
+  border-radius: 8px;
+
+}
+
+.no-border {
+	margin: 1rem;
+	font-size: 30px;
+	text-decoration: none;
+	overflow: hidden;
 	transition: transform 0.1s ease-in-out, box-shadow 0.1s;
   padding: 16px;
   border-radius: 8px;
-	height:220px;
+	height:240px;
 }
-
 
 .card:hover {
   box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
