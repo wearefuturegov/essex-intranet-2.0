@@ -1,0 +1,16 @@
+$ecc-button-background-color: #2E65B7 !default;
+$ecc-button-border-radius: 6px !default;
+
+
+
+.ecc-button {
+    background: $ecc-button-background-color;
+    border-radius: $ecc-button-border-radius;
+    font-family: "Lexend", roboto, oxygen, ubuntu, cantarell, "Helvetica Neue", sans-serif;
+    color: #FFFFFF;
+    padding: 10px 15px;
+    border: 0;
+    font-weight: bold;
+    font-size: 1.1rem;
+    line-height: 130%;
+}

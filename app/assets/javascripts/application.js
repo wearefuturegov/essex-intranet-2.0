@@ -7,21 +7,26 @@ if (window.console && window.console.info) {
 
 $(document).ready(function () {
   window.GOVUKFrontend.initAll()
+
+
+
+
+if(document.getElementById("form") !== null) {
+  document.getElementById("form").addEventListener("submit", function(event){
+    event.preventDefault();
+
+    const salary = Number(document.getElementById('salary').value);
+    const months = Number(document.getElementById('months').value);
+    const holidayLength = document.getElementById('holidayLength').value;
+
+    const costPerDay = (salary / months) / 260;
+
+    document.getElementById('daily').innerText = 'Monthly cost of each day: £' + costPerDay.toFixed(2);
+
+    if (holidayLength) {
+      document.getElementById('total').innerText = 'Monthly cost of the holiday: £' + (costPerDay * holidayLength).toFixed(2);
+    }
+  });
+}
+
 })
-
-
-document.getElementById("form").addEventListener("submit", function(event){
-  event.preventDefault();
-
-  const salary = Number(document.getElementById('salary').value);
-  const months = Number(document.getElementById('months').value);
-  const holidayLength = document.getElementById('holidayLength').value;
-
-  const costPerDay = (salary / months) / 260;
-
-  document.getElementById('daily').innerText = 'Monthly cost of each day: £' + costPerDay.toFixed(2);
-
-  if (holidayLength) {
-    document.getElementById('total').innerText = 'Monthly cost of the holiday: £' + (costPerDay * holidayLength).toFixed(2);
-  }
-});
