@@ -1,0 +1,40 @@
+
+.search-container {
+
+    &__form {
+
+      display: flex;
+      flex-direction: row;
+    }
+
+    &__button {
+
+      background: #414745;
+      font-family: "Lexend", roboto, oxygen, ubuntu, cantarell, "Helvetica Neue", sans-serif;
+      color: #FFFFFF;
+      padding: 15px 40px 15px 20px;
+
+      border: 0;
+      // font-weight: bold;
+      font-size: 1.1rem;
+
+      background-image: url('../images/icons/search-icon.svg');
+      background-repeat: no-repeat;
+      background-position: calc(100% - 20px) center;
+      min-width: 150px;
+    }
+
+    &__input {
+
+
+      padding: 15px 20px;
+      border: 0;
+      background-color: #ffffff;
+      border-radius: 0px;
+
+      font-size: 1.1rem;
+      width: 100%;
+      height: auto;
+    }
+  
+  }
