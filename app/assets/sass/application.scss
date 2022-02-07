@@ -64,7 +64,7 @@ div .txtblock {
 .topnav a {
   color: #0D0E0E;
   text-align: center;
-  padding: 14px 16px;
+  padding: 14px 12px;
   text-decoration: none;
 	font-size: 14px;
 	font-weight:600;
@@ -81,6 +81,7 @@ div .txtblock {
   background-color: #fff;
   color:#1571FB;
 	text-decoration:underline;
+	border-top: solid 1px;
 }
 .fill-grey {
     fill: green;
