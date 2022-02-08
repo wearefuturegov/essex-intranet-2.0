@@ -1,0 +1,48 @@
+.accordion-section {
+  border-top: 1px solid #b1b4b6;
+
+  .icon-open {
+    display: block;
+  }
+
+  .icon-close {
+    display: none;
+  }
+  .accordion-body {
+    margin-bottom: 2rem;
+    display: none;
+
+  }
+
+  &.open {
+    .accordion-body {
+      display: block;
+    }
+
+    .icon-open {
+      display: none;
+    }
+
+    .icon-close {
+      display: block;
+    }
+  }
+}
+
+.accordion-heading {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1rem 0;
+  cursor: pointer;
+
+  h3 {
+    margin: 0;
+    color: #2E65B7;
+  }
+}
+
+.accordion-toggle {
+  padding: 0 0.5rem;
+  margin-left: 2rem;
+}
