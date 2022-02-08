@@ -25,16 +25,16 @@ $govuk-font-family: Lexend, "HelveticaNeue", "Helvetica Neue", "Arial", "Helveti
 @import "hero";
 
 .govuk-grid-column-one-quarter{
-	padding-right:4px;
+  padding-right:4px;
 }
 
 body {
-font-family: Lexend, calibri, helvetica;
+  font-family: Lexend, calibri, helvetica;
 }
 // Add extra styles here, or re-organise the Sass files in whichever way makes most sense to you
 
 div .txtblock {
-	margin:30px 0 48px 0;
+  margin:30px 0 48px 0;
 }
 
 .app-related-items {
@@ -52,13 +52,13 @@ div .txtblock {
 /* Top Nav */
 
 .topnav {
-	margin: auto;
+  margin: auto;
   overflow: hidden;
-	border-bottom: 1px solid #DBDBDB;
+  border-bottom: 1px solid #DBDBDB;
   //background-color: #ff9900;
-	position:relative;
-	padding:8px 8px 8px 16px;
-	text-decoration: none;
+  position:relative;
+  padding:8px 8px 8px 16px;
+  text-decoration: none;
 
 }
 
@@ -67,13 +67,13 @@ div .txtblock {
   text-align: center;
   padding: 14px 12px;
   text-decoration: none;
-	font-size: 14px;
-	font-weight:600;
+  font-size: 14px;
+  font-weight:600;
 
 }
 
 .topnav a:visited {
-	color: #0D0E0E;
+  color: #0D0E0E;
 
 }
 
@@ -81,11 +81,11 @@ div .txtblock {
 .topnav a:hover {
   background-color: #fff;
   color:#1571FB;
-	text-decoration:underline;
-	border-top: solid 1px;
+  text-decoration:underline;
+  border-top: solid 1px;
 }
 .fill-grey {
-    fill: green;
+  fill: green;
 }
 .topnav a.active {
   background-color: #04AA6D;
@@ -94,18 +94,18 @@ div .txtblock {
 
 .topnav .tools
 {
-	font-family: Lexend;
-	font-style: normal;
-	font-weight: normal;
-	font-size: 14px;
-	line-height: 100%;
-	color: #414745;
+  font-family: Lexend;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 100%;
+  color: #414745;
 }
 
 .divider-top-links
 {
-	background-image: url('../public/images/divider-top-links.svg');
-	background-repeat:no-repeat;background-position:4px
+  background-image: url('../public/images/divider-top-links.svg');
+  background-repeat:no-repeat;background-position:4px
 }
 
 
@@ -148,7 +148,7 @@ div .txtblock {
   cursor: pointer;
   -webkit-transition-duration: 0.4s; /* Safari */
   transition-duration: 0.4s;
-	border-radius: 5px;
+  border-radius: 5px;
 }
 
 
@@ -169,8 +169,8 @@ div .txtblock {
 }
 
 .button a {
-	color:#ffffff;
-	text-decoration: none;
+  color:#ffffff;
+  text-decoration: none;
 }
 
 /* H2 */
@@ -189,17 +189,17 @@ div .txtblock {
 
 
 govuk-breadcrumbs a{
-	font-weight:300;
+  font-weight:300;
 }
 
 .timestamp {
-	font-family: Lexend;
-	font-style: normal;
-	font-weight: normal;
-	font-size: 14px;
-	line-height: 100%;
-	color: #5E5E56;
-	padding-bottom:20px;
+  font-family: Lexend;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 100%;
+  color: #5E5E56;
+  padding-bottom:20px;
 }
 .govuk-heading-xl {
   color: #0b0c0c;
@@ -216,64 +216,63 @@ govuk-breadcrumbs a{
 
 
 h1 {
-font-family: Lexend, calibri, helvetica;
-font-style: normal;
-font-weight: bold;
-font-size: 40px;
-line-height: 140%;
+  font-family: Lexend, calibri, helvetica;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 40px;
+  line-height: 140%;
 }
 
 h2 {
-font-family: Lexend, calibri, helvetica;
-font-style: normal;
-font-weight: bold;
-font-size: 30px;
-line-height: 160%;
-/* identical to box height, or 48px */
+  font-family: Lexend, calibri, helvetica;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 30px;
+  line-height: 160%;
+  /* identical to box height, or 48px */
 }
 
 h3{
-font-family: Lexend, calibri, helvetica;
-font-style: normal;
-font-weight: bold;
-font-size: 24px;
-margin-top: 0;
-margin-bottom:10px;
+  font-family: Lexend, calibri, helvetica;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 24px;
+  margin-top: 0;
+  margin-bottom:10px;
 
 }
 
 h3 a {
-font-family: Lexend, calibri, helvetica;
-font-size: 24px;
-line-height: 1.2;
+  font-family: Lexend, calibri, helvetica;
+  font-size: 24px;
+  line-height: 1.2;
 }
 
 p {
-font-family: Lexend, calibri, helvetica;
-font-style: normal;
-font-weight: normal;
-font-size: 18px;
-line-height:160%;
+  font-family: Lexend, calibri, helvetica;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 18px;
+  line-height:160%;
 }
 
 
 li {
-font-family: Lexend, calibri, helvetica;
-font-style: normal;
-font-weight: normal;
-font-size: 18px;
-line-height:160%;
-padding-left:8px;
+  font-family: Lexend, calibri, helvetica;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 18px;
+  line-height:160%;
+  padding-left:8px;
 }
 
 
 a {
-font-family: Lexend, calibri, helvetica;
-font-style: medium;
-font-weight: 600;
-font-size: 18px;
-line-height: 160%;
-color:#2E65B7;
+  font-family: Lexend, calibri, helvetica;
+  font-style: medium;
+  font-weight: 600;
+  line-height: 160%;
+  color:#2E65B7;
 }
 
 
@@ -293,11 +292,11 @@ a:active {
 }
 
 .active {
-	text-decoration:none;
-	padding:4px 4px 4px 8px ;
-	background-color:#F4E9D1;
-	font-weight: bold;
-	border-radius: 5px;
+  text-decoration:none;
+  padding:4px 4px 4px 8px ;
+  background-color:#F4E9D1;
+  font-weight: bold;
+  border-radius: 5px;
 }
 
 
@@ -305,42 +304,42 @@ a:active {
 
 
 input {
-	 height:40px
+  height:40px
 }
 
 
 .card p {
-	font-size:16px;
-	font-family: Lexend, calibri, helvetica;
-	line-height:24px;
+  font-size:16px;
+  font-family: Lexend, calibri, helvetica;
+  line-height:24px;
 }
 
 /* Lazy Load Styles */
 .card {
-	//display: inline-block;
-	//max-width: 20rem;
-	width: 99%;
-	margin: 1rem;
-	font-size: 30px;
-	text-decoration: none;
-	overflow: hidden;
-	transition: transform 0.1s ease-in-out, box-shadow 0.1s;
+  //display: inline-block;
+  //max-width: 20rem;
+  width: 99%;
+  margin: 1rem;
+  font-size: 30px;
+  text-decoration: none;
+  overflow: hidden;
+  transition: transform 0.1s ease-in-out, box-shadow 0.1s;
   padding: 16px;
-	height:240px;
-	box-shadow: 0 0 2rem -1rem rgba(0,0,0,0.3);
+  height:240px;
+  box-shadow: 0 0 2rem -1rem rgba(0,0,0,0.3);
   border-radius: 8px;
 
 }
 
 .no-border {
-	margin: 1rem;
-	font-size: 30px;
-	text-decoration: none;
-	overflow: hidden;
-	transition: transform 0.1s ease-in-out, box-shadow 0.1s;
+  margin: 1rem;
+  font-size: 30px;
+  text-decoration: none;
+  overflow: hidden;
+  transition: transform 0.1s ease-in-out, box-shadow 0.1s;
   padding: 16px;
   border-radius: 8px;
-	height:240px;
+  height:240px;
 }
 
 .card:hover {
@@ -368,11 +367,13 @@ input {
   overflow: hidden;
   background-color: #E40037;
   padding: 2px 5px 0 0;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
 }
 
 /* Style the header links */
 .header a {
-  float: left;
   color: black;
   text-align: center;
   padding: 12px;
@@ -385,24 +386,24 @@ input {
 
 .key
 {
-	background: #F3F2F1;
-	padding:24px;
-	border-radius: 8px;
-	background-image: url('../../public/images/icons/key-info.svg');
-	background-position: 16px 16px;
-	background-repeat:no-repeat;
+  background: #F3F2F1;
+  padding:24px;
+  border-radius: 8px;
+  background-image: url('../../public/images/icons/key-info.svg');
+  background-position: 16px 16px;
+  background-repeat:no-repeat;
 }
 
 
 .calculator{
-	background: #F2EEF4;
-	//border-color:#F3F2F1;
-	//border: solid 3px #DDDDDD;
-	padding:24px;
-	border-radius: 8px;
-	background-image: url('../../public/images/icons/icon-calculator.svg');
-	background-position: 16px 16px;
-	background-repeat:no-repeat;
+  background: #F2EEF4;
+  //border-color:#F3F2F1;
+  //border: solid 3px #DDDDDD;
+  padding:24px;
+  border-radius: 8px;
+  background-image: url('../../public/images/icons/icon-calculator.svg');
+  background-position: 16px 16px;
+  background-repeat:no-repeat;
 
 }
 
@@ -432,7 +433,6 @@ input {
 /* Add media queries for responsiveness - when the screen is 500px wide or less, stack the links on top of each other */
 @media screen and (max-width: 500px) {
   .header a {
-    float: none;
     display: block;
     text-align: left;
   }
@@ -450,11 +450,11 @@ input {
 }
 .govuk-radios__item
 {
-	border-color:#ff9900;
+  border-color:#ff9900;
 }
 .govuk-label
 {
-	font-family: Lexend, calibri, helvetica;
+  font-family: Lexend, calibri, helvetica;
 }
 form.example input[type=text] {
   padding: 10px;
@@ -472,7 +472,7 @@ form.example button {
   background: #3D2E3A;
   color: white;
   font-size: 17px;
-	height:40px;
+  height:40px;
   border: 0px solid grey;
   border-left: none;
   cursor: pointer;
