@@ -103,19 +103,15 @@ function checkCookie() {
 }
 
 function getCookie(name) {
-    var dc = document.cookie;
-    var prefix = name + "=";
-    var begin = dc.indexOf("; " + prefix);
-    if (begin == -1) {
-        begin = dc.indexOf(prefix);
-        if (begin != 0) return null;
-    } else {
-        begin += 2;
-        var end = document.cookie.indexOf(";", begin);
-        if (end == -1) {
-            end = dc.length;
-        }
-    }
+    if (typeof document === 'undefined') return '';
+
+    let dc = document.cookie;
+    let prefix = name + '=';
+
+    let begin = dc.indexOf(prefix);
+    if (begin == -1) return null;
+    var end = dc.indexOf(';', begin);
+    if (end == -1) end = dc.length;
 
     return decodeURI(dc.substring(begin + prefix.length, end));
 }
@@ -123,7 +119,6 @@ function getCookie(name) {
 
 
 function loadAnalytics() {
-    console.log('loadAnalytics');
     try {
         cookieCallback();   
     } catch (error) {
