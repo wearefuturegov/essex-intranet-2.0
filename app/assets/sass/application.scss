@@ -143,7 +143,6 @@ div .txtblock {
   text-align: center;
   text-decoration: none;
   display: inline-block;
-  font-size: 18px;
   margin: 4px 2px;
   cursor: pointer;
   -webkit-transition-duration: 0.4s; /* Safari */
@@ -171,6 +170,16 @@ div .txtblock {
 .button a {
   color:#ffffff;
   text-decoration: none;
+}
+
+#myOracle {
+  display: flex;
+  align-items: center;
+}
+
+.link-with-arrow {
+  display: flex;
+  align-items: center;
 }
 
 /* H2 */
@@ -207,8 +216,6 @@ govuk-breadcrumbs a{
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   font-weight:900;
-  font-size: 44px;
-  line-height: 1.09375;
   display: block;
   margin-top: 0;
   margin-bottom: 24px;
@@ -252,8 +259,6 @@ p {
   font-family: Lexend, calibri, helvetica;
   font-style: normal;
   font-weight: normal;
-  font-size: 18px;
-  line-height:160%;
 }
 
 
@@ -261,8 +266,6 @@ li {
   font-family: Lexend, calibri, helvetica;
   font-style: normal;
   font-weight: normal;
-  font-size: 18px;
-  line-height:160%;
   padding-left:8px;
 }
 
@@ -271,11 +274,8 @@ a {
   font-family: Lexend, calibri, helvetica;
   font-style: medium;
   font-weight: 600;
-  line-height: 160%;
   color:#2E65B7;
 }
-
-
 
 a:visited {
   color: #2E65b7;
@@ -298,10 +298,6 @@ a:active {
   font-weight: bold;
   border-radius: 5px;
 }
-
-
-
-
 
 input {
   height:40px
