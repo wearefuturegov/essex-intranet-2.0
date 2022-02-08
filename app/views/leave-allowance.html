@@ -248,52 +248,12 @@ Leave allowance - Essex Intranet Prototype
   </div>
 
   <div class="govuk-grid-column-one-third">
-    <aside class="app-related-items" role="complementary">
-      <h2 class="govuk-heading-m" id="subsection-title">
-        In this section
-      </h2>
-      <nav role="navigation" aria-labelledby="subsection-title">
-        <ul class="govuk-list govuk-!-font-size-16">
-          <li>
-            <a href="book-leave">
-              Book annual leave
-            </a>
-          </li>
-
-          <li>
-            <a href="#">
-              Change annual leave
-            </a>
-          </li>
-
-          <li>
-            <a href="buy-leave" class="govuk-!-font-weight-bold">
-              Buy more annual leave
-            </a>
-          </li>
-
-
-          <li>
-            <a href="#">
-              Carry over annual leave
-            </a>
-          </li>
-          <li class="active">
-            Annual leave allowance
-          </li>
-
-        </ul>
-      </nav>
-    </aside>
-
+    {% include "includes/in-this-section.html" %}
     {% include "includes/contact-help.html" %}
   </div>
 
 </div>
 
 <div style="height:80px"></div>
-
-
-
 
 {% endblock %}
