@@ -1,0 +1,33 @@
+.ecc-header {
+    background-color: #E40037;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 25px 40px;
+
+    &__logo {
+        background-image: url('../images/ecc_logo.svg');
+        min-width: 289px;
+        min-height: 37px;
+        display: inline-block;
+        background-position: center;
+        background-repeat: no-repeat;
+
+        > * {
+            @include sr-only;
+        }
+
+        &:focus {
+            background-color: black;
+            outline: 0;
+            box-shadow: 0 0 0 0;
+            border: 3px solid yellow;
+        }
+    }
+    &__meta {
+        font-size: 1.4rem;
+        font-weight: 600;
+        padding: 2px 10px;
+        margin-top: 3px; // logo text isn't truely centered
+    }
+}
