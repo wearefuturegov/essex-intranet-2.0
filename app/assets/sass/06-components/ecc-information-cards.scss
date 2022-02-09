@@ -1,0 +1,202 @@
+@mixin information-cards-default {
+    display: block;
+    
+    &__item {
+        
+        transition: transform 0.1s ease-in-out, box-shadow 0.1s;
+        box-shadow: 0 0 2rem -1rem rgba(0,0,0,0.3);
+        border-radius: 8px;
+        padding: 15px; 
+        margin: 2rem 0;
+              
+        &:first-of-type {
+            margin-top: 0;
+        }
+        
+        &:hover {
+            box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+        }
+        
+        > p {
+            font-size: 1rem;
+        }
+        
+        > img {
+            height: 45px;
+        }
+        
+    }
+}
+
+@mixin two-col-cards {
+    display: flex;
+    flex-wrap: wrap;
+    
+    &__item {
+        
+        width: 50%;
+        margin: 1%;	
+        flex-grow: 1;
+        flex-shrink: 0;
+        flex-basis: 45%;
+        
+        
+        &:nth-of-type(2n) {
+            margin-right: 0;	
+        }
+        
+        &:nth-of-type(2n+1) {
+            margin-left: 0;	
+        }
+        
+        &:nth-child(-n+2) {
+            margin-top: 0;
+        }
+
+        // stop things over flowing when there isn't a final box or 2 or 3
+        &:nth-of-type(2n+1) {
+            flex-grow: 0; // important!
+        }
+        
+    }
+}
+
+@mixin three-col-cards {
+    display: flex;
+    flex-wrap: wrap;
+    
+    &__item {
+        width: 32%;
+        margin: 1%;	
+        flex-grow: 1;
+        flex-shrink: 0;
+        flex-basis: 32%;
+
+        // undo 2 col margins
+
+        &:nth-of-type(2n) {
+            margin-right: 1%;	
+        }
+        
+        &:nth-of-type(2n+1) {
+            margin-left: 1%;	
+        }
+        
+        &:nth-child(-n+2) {
+            margin-top: 1%;
+        }
+
+        // undo 2 col stop things over flowing when there isn't a final box or 2 or 3
+        &:nth-of-type(2n+1) {
+            flex-grow: 1; // important!
+        }
+
+        // sort 2 col margins
+        
+        
+        &:nth-of-type(3n) {
+            margin-right: 0;	
+        }
+        
+        &:nth-of-type(3n+1) {
+            margin-left: 0;	
+        }
+        
+        &:nth-child(-n+3) {
+            margin-top: 0;
+        }
+
+         // stop things over flowing when there isn't a final box or 2 or 3
+         &:nth-of-type(2n+1), &:nth-of-type(2n+2) {
+            flex-grow: 0; // important!
+        }
+        
+        
+        
+    }
+}
+
+@mixin four-col-cards {
+    // 4 col
+
+        display: flex;
+        flex-wrap: wrap;
+        
+        &__item {
+            box-sizing: border-box;
+            width: 25%;
+            margin: 1%;	
+            flex-grow: 1;
+            flex-shrink: 0;
+            flex-basis: 23%;
+
+            // undo 3 col margins
+
+            &:nth-of-type(3n) {
+                margin-right: 1%;	
+            }
+            
+            &:nth-of-type(3n+1) {
+                margin-left: 1%;	
+            }
+            
+            &:nth-child(-n+3) {
+                margin-top: 1%;
+            }
+            
+            
+            // sort out 4 col margins
+            &:nth-of-type(4n) {
+                margin-right: 0;	
+            }
+            
+            &:nth-of-type(4n+1) {
+                margin-left: 0;	
+            }
+            
+            &:nth-child(-n+4) {
+                margin-top: 0;
+            }
+
+
+            // stop things over flowing when there isn't a final box or 2 or 3
+            &:nth-of-type(4n+1), &:nth-of-type(4n+2), &:nth-of-type(4n+3) {
+                flex-grow: 0; // important!
+            }
+        
+            
+        }
+
+}
+
+
+
+.ecc-information-cards--four-col {
+    @include information-cards-default;
+
+
+    // 3 col
+    @media screen and (min-width:$tablet) {
+        @include three-col-cards;
+    }
+
+    @media screen and (min-width:$desktop) {
+        @include four-col-cards;
+    }
+
+}
+
+.ecc-information-cards--three-col {
+    @include information-cards-default;
+
+
+    // 3 col
+    @media screen and (min-width:$tablet) {
+        @include two-col-cards;
+    }
+
+    @media screen and (min-width:$desktop) {
+        @include three-col-cards;
+    }
+
+}

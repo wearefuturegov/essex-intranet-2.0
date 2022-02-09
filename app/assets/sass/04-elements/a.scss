@@ -1,0 +1,20 @@
+a {
+    font-family: Lexend, calibri, helvetica;
+    font-style: medium;
+    font-weight: 600;
+    color:#2E65B7;
+  }
+  
+  a:visited {
+    color: #2E65b7;
+  }
+  
+  /* mouse over link */
+  a:hover {
+    color: #1571FB;
+  }
+  
+  /* selected link */
+  a:active {
+    color: blue;
+  }

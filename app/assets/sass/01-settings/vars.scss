@@ -1,0 +1,114 @@
+/*
+
+Colours - from ecc brand guidelines draft document jan 2022
+
+*/
+$essex-red-strong: #921d33; /* Strong 1 */
+$essex-orange-strong: #c65015; /* Strong 2 */
+$essex-yellow-strong: #c69318; /* Strong 3 */
+$essex-pink-strong: #910563; /* Strong 4 */
+$essex-purple-strong: #5c2472; /* Strong 5 */
+$essex-blue-strong: #004c94; /* Strong 6 */
+$essex-green-strong: #1d594c; /* Strong 7 */
+$essex-green-light-strong: #4b7131; /* Strong 8 */
+$essex-green-grey-strong: #414745; /* Strong 9 */
+
+$essex-red-bright: #e40037; /* Bright 1 */
+$essex-orange-bright: #e97135; /* Bright 2 */
+$essex-yellow-bright: #ecb720; /* Bright 3 */
+$essex-pink-bright: #c84674; /* Bright 4 */
+$essex-purple-bright: #9361b3; /* Bright 5 */
+$essex-blue-bright: #4179aa; /* Bright 6 */
+$essex-green-bright: #3a7d64; /* Bright 7 */
+$essex-green-light-bright: #729d4d; /* Bright 8 */
+$essex-green-grey-bright: #76766b; /* Bright 9 */
+
+$essex-red-soft: #ead2d5; /* Soft 1 */
+$essex-orange-soft: #f3d0a5; /* Soft 2 */
+$essex-yellow-soft: #f0e3bb; /* Soft 3 */
+$essex-pink-soft: #e0d3d1; /* Soft 4 */
+$essex-purple-soft: #eadbea; /* Soft 5 */
+$essex-blue-soft: #c3d3e5; /* Soft 6 */
+$essex-green-soft: #bbcccf; /* Soft 7 */
+$essex-green-light-soft: #d2dcbb; /* Soft 8 */
+$essex-green-grey-soft: #d4d4d4; /* Soft 9 */
+
+
+/* Colours - these are the names we use */
+
+
+/* new colours we've added in the designs */
+
+$essex-dark-grey: #3D2E3A;
+$essex-dark-grey-hover: #271d25;
+$essex-link-blue: #2E65B7;
+$essex-font-color: #1E2428;
+$essex-border-color: #B1B4B6;
+
+
+/*
+Grey Scale
+*/
+$color-white: #FFFFFF;
+$color-grey-lightest: #F0F0F0;
+$color-grey-lighter: #AAAAAA;
+$color-grey-light: #84847A;
+$color-grey-medium: #5E5E56;
+$color-grey-dark: #414745;
+$color-black: #0D0E0E;
+
+$color-accent: $essex-red-bright;
+$color-green: $essex-green-strong;
+$color-red: $essex-red-bright;
+$color-orange: $essex-orange-strong;
+$color-yellow: $essex-yellow-strong;
+$color-blue: $essex-blue-strong;
+
+
+/*
+Colours Applied
+In this section, we "apply" our colours.
+*/
+$color-accent: $essex-red-bright; 
+$color-info: $color-blue;
+$color-success: $color-green;
+$color-danger: $color-red;
+$color-warning: $color-orange;
+$color-minor: $color-yellow;
+$color-link: $essex-link-blue;
+$color-focus: #ff0;
+
+
+/* Fonts */
+/*
+We choose basic fonts that most people have in browser cache from visiting other websites.
+This will help with page speed, rather than calling fonts from Google Fonts or somewhere.
+*/
+$font-primary:  "Lexend", roboto, oxygen, ubuntu, cantarell, "Helvetica Neue", sans-serif;
+$font-secondary: var(--font-primary); /* Calibri, Frutiger, "Frutiger Linotype", Univers, "Gill Sans", "Gill Sans MT", "Myriad Pro", Myriad, "DejaVu Sans Condensed", "Liberation Sans", "Nimbus Sans L", Tahoma, Geneva, "Helvetica Neue", Helvetica, Arial, sans-serif; */
+
+
+/*
+
+no time to apply this correctly but see drupal theme for it in practice
+
+Font sizes based on vertical rhythm of:
+- Font size: 19px;
+- Line height: 1.9
+- Scale factor: 1.303 1.618
+- Details: https://www.gridlover.net/try
+*/
+$font-size: 1.188rem; /* assuming 16px base size */
+$font-size-smallest: calc(var(--font-size) * 0.3);
+$font-size-smaller: calc(var(--font-size) * 0.5);
+$font-size-small: calc(var(--font-size) * 0.75);
+$font-size-medium: calc(var(--font-size) * 1);
+$font-size-large: calc(var(--font-size) * 1.3125);
+$font-size-larger: calc(var(--font-size) * 1.6875);
+$font-size-largest: calc(var(--font-size) * 2.875);
+$font-size-h1: clamp(var(--font-size-larger), 10vw, var(--font-size-largest));
+$font-size-h2: clamp(var(--font-size-large), 8vw, var(--font-size-larger));
+$font-size-h3: clamp(var(--font-size-medium), 6vw, var(--font-size-large));
+$font-size-h4: var(--font-size-medium);
+$font-size-h5: var(--font-size-medium);
+$font-size-h6: var(--font-size-medium);

@@ -1,0 +1,102 @@
+.ecc-tools {
+    padding: 20px 0;
+    // border-bottom: 1px solid $color-grey-lightest;
+    font-size: .9rem;
+
+    &__title {
+        background-image: url('./../images/icons/external-link-icon-red.svg');
+        background-repeat: no-repeat;
+        background-position: center left;
+        padding: 10px 25px;
+        font-weight: 300;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    &__toggle {
+        background-image: url('./../images/icons/bars-solid.svg');
+        background-repeat: no-repeat;
+        background-position: center center;
+        width: 20px;
+        height: 20px;
+        cursor: pointer;
+        border: 0;
+        padding: 0;
+        margin: 0;
+        background-color: transparent;
+
+        > span {
+            @include sr-only;
+        }
+    }
+
+    &.open {
+        ul {
+            display: block;
+        }
+    }
+
+    ul {
+        display: none;
+        list-style: none;
+        margin: 0;
+        padding: 0;
+    }
+
+    li {
+        display: block;
+    }
+
+    a {
+        text-decoration: none;
+        color: $color-black;
+        font-weight: 600;
+        display: block;
+        padding: 10px 25px;
+        border-bottom: 1px solid $color-grey-lightest;
+        &:hover {
+            background-color: $color-grey-lightest;
+        }
+    }
+    
+
+    @media screen and (min-width:$tablet) {
+        display: flex; 
+        flex-direction: row;
+        justify-content: right;
+
+        &__toggle {
+            display: none;
+        }
+
+        ul {
+            display: flex;
+            flex-grow: 1;
+            justify-content: end;
+        }
+
+        li {
+            border-right: 1px solid $color-accent;
+            padding: 0;
+            display: inline-block;
+            
+    
+            &:last-of-type {
+                border: 0;
+            }
+        }
+
+        a {
+            padding: 10px 20px;
+            border: 0;
+
+            &:hover {
+                background-color: transparent;
+                text-decoration: underline;
+            }
+        }
+        
+        
+    }
+}

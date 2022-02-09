@@ -1,0 +1,68 @@
+
+
+
+.card p {
+    font-size:16px;
+    font-family: Lexend, calibri, helvetica;
+    line-height:24px;
+  }
+  
+  /* Lazy Load Styles */
+  .card {
+    //display: inline-block;
+    //max-width: 20rem;
+    width: 99%;
+    font-size: 30px;
+    margin: 1rem 0;
+    text-decoration: none;
+    overflow: hidden;
+    transition: transform 0.1s ease-in-out, box-shadow 0.1s;
+    padding: 16px;
+    min-height: 180px;
+    box-shadow: 0 0 2rem -1rem rgba(0,0,0,0.3);
+    border-radius: 8px;
+  
+  }
+  
+  @media screen and (min-width: 641px) {
+    .card {
+      margin: 1rem;
+      height: 240px;
+    }
+  }
+  
+  @media screen and (min-width: 768px) {
+    .card {
+      height: 270px;
+    }
+  }
+
+
+
+
+.no-border {
+    font-size: 30px;
+    text-decoration: none;
+    overflow: hidden;
+    transition: transform 0.1s ease-in-out, box-shadow 0.1s;
+    padding: 16px;
+    border-radius: 8px;
+  }
+  
+  .card:hover {
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+  }
+
+  
+.container {
+    width:100%;
+    border-radius: 5px;
+    //padding: 2px 16px;
+  }
+
+
+
+/* Add rounded corners to the top left and the top right corner of the image */
+.card img {
+    border-radius: 5px;
+  }
