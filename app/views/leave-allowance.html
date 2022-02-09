@@ -44,7 +44,7 @@ Leave allowance - Essex Intranet Prototype
       How much annual leave you get is written in your contract.
       <br>It depends on:
       </p>
-      <ul class="">
+      <ul class="govuk-list govuk-list--bullet">
         <li>conditions of service</li>
         <li>salary</li>
         <li>length of service.</li>
@@ -63,7 +63,7 @@ Leave allowance - Essex Intranet Prototype
         <form id="form">
           <fieldset class="govuk-fieldset">
             <legend class="govuk-fieldset__legend govuk-fieldset__legend--l">
-              <h3 style="padding-left:50px">Holiday allowance calculator</h3>
+              <h3 style="padding-left:50px" class='govuk-heading-m'>Holiday allowance calculator</h3>
             </legend>
 
             <div class="govuk-radios" data-module="govuk-radios">
@@ -112,7 +112,7 @@ Leave allowance - Essex Intranet Prototype
 
           </fieldset>
 
-          <input type="submit" value="Continue" class="button button2 govuk-!-margin-top-4" style="height:50px">
+          <input type="submit" value="Continue" class="button button2 govuk-body govuk-!-margin-top-4" style="height:50px">
 
         </form>
       </div>
@@ -122,18 +122,18 @@ Leave allowance - Essex Intranet Prototype
 
     <!-- Block text starts -->
     <div class="txtblock">
-      <h2>Find out how much annual leave you currently have</h2>
+      <h2 class='govuk-heading-l'>Find out how much annual leave you currently have</h2>
       <p>You can check how much holiday you have on <b>My Oracle</b>.
       Sign in and select ‘Time and absences’ then ‘Absence balance’.</p>
 
       <p>Your absence balance is shown in hours and will include:</p>
-      <ul class="">
+      <ul class="govuk-list govuk-list--bullet">
         <li>any holiday hours that you have bought</li>
         <li>bank holiday hours if you work part-time</li>
         <li>a deduction for any approved annual leave</li>
       </ul>
 
-      <button class="button button2">
+      <button class="button button2 govuk-body" id='myOracle'>
         <a href="https://fa-epwc-saasfaprod1.fa.ocs.oraclecloud.com/hcmUI/faces/FndOverview?fndGlobalItemNodeId=itemNode_my_information_absences1" target="_blank">
           Check annual leave allowance</a>
         <img alt="" style="width: 24px;margin-left:12px;padding-top:0px" src="public/images/icons/external-link-icon.svg">
@@ -141,13 +141,11 @@ Leave allowance - Essex Intranet Prototype
     </div>
     <!-- Block text ends -->
 
-
-
     <!-- Block accordion starts -->
-    <div id='accordion'>
+    <div id='accordion' class='govuk-!-margin-bottom-8'>
       <div class='accordion-section'>
         <div id='accordion-heading-1' class='accordion-heading'>
-          <h3>
+          <h3 class='govuk-heading-m'>
             Additional annual leave
           </h3>
           <div class='accordion-toggle'>
@@ -165,7 +163,7 @@ Leave allowance - Essex Intranet Prototype
 
       <div class='accordion-section'>
         <div id='accordion-heading-2' class='accordion-heading'>
-          <h3>
+          <h3 class='govuk-heading-m'>
             Annual leave and maternity or shared parental leave
           </h3>
           <div class='accordion-toggle'>
@@ -185,7 +183,7 @@ Leave allowance - Essex Intranet Prototype
 
       <div class='accordion-section'>
         <div id='accordion-heading-3' class='accordion-heading'>
-          <h3>
+          <h3 class='govuk-heading-m'>
             Annual leave for new starters
           </h3>
           <div class='accordion-toggle'>
@@ -205,7 +203,7 @@ Leave allowance - Essex Intranet Prototype
 
       <div class='accordion-section'>
         <div id='accordion-heading-4' class='accordion-heading'>
-          <h3>
+          <h3 class='govuk-heading-m'>
             Annual leave for leavers
           </h3>
           <div class='accordion-toggle'>
@@ -225,7 +223,7 @@ Leave allowance - Essex Intranet Prototype
 
       <div class='accordion-section'>
         <div id='accordion-heading-5' class='accordion-heading'>
-          <h3>
+          <h3 class='govuk-heading-m'>
             Illness while on annual leave
           </h3>
           <div class='accordion-toggle'>
@@ -248,52 +246,12 @@ Leave allowance - Essex Intranet Prototype
   </div>
 
   <div class="govuk-grid-column-one-third">
-    <aside class="app-related-items" role="complementary">
-      <h2 class="govuk-heading-m" id="subsection-title">
-        In this section
-      </h2>
-      <nav role="navigation" aria-labelledby="subsection-title">
-        <ul class="govuk-list govuk-!-font-size-16">
-          <li>
-            <a href="book-leave">
-              Book annual leave
-            </a>
-          </li>
-
-          <li>
-            <a href="#">
-              Change annual leave
-            </a>
-          </li>
-
-          <li>
-            <a href="buy-leave" class="govuk-!-font-weight-bold">
-              Buy more annual leave
-            </a>
-          </li>
-
-
-          <li>
-            <a href="#">
-              Carry over annual leave
-            </a>
-          </li>
-          <li class="active">
-            Annual leave allowance
-          </li>
-
-        </ul>
-      </nav>
-    </aside>
-
+    {% include "includes/in-this-section.html" %}
     {% include "includes/contact-help.html" %}
   </div>
 
 </div>
 
 <div style="height:80px"></div>
-
-
-
 
 {% endblock %}

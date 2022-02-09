@@ -41,20 +41,20 @@
   <!-- Block text starts -->
 
   <div class="txtblock">
-      <p>
+      <p class='govuk-body'>
       You can buy up to 5 days (37 hours) extra annual leave each year. If you work part-time, the maximum hours you can ask for is the same as the weekly hours in your contract. If you are on a term-time contract or have a contract that is less than 12 months, you are not eligible to buy more annual leave.</p>
 
 
-        <p>You can only buy leave between the following dates each year: </p>
+        <p class='govuk-body'>You can only buy leave between the following dates each year: </p>
 
-        <ul class="">
+        <ul class="govuk-list govuk-list--bullet">
           <li>1 to 24 March</li>
           <li>1 September to 31 October</li>
         </ul>
-        <button class="button button2">
+        <button id='myOracle' class="button button2 govuk-body">
           <a href="https://fa-epwc-saasfaprod1.fa.ocs.oraclecloud.com/hcmUI/faces/FndOverview?fndGlobalItemNodeId=itemNode_my_information_absences1" target="_blank">
           Buy more annual leave on My Oracle</a>
-          <img class="" style="width: 24px;margin-left:12px;padding-top:0px" src="public/images/icons/external-link-icon.svg">
+          <img class="" alt='' style="width: 24px;margin-left:12px;padding-top:0px" src="public/images/icons/external-link-icon.svg">
         </button>
   </div>
 
@@ -62,12 +62,12 @@
 
 <!-- Block Calculator starts -->
 
-  <div class="txtblock calculator"  style="" >
+  <div class="txtblock calculator">
 
   <form id="form">
     <div>
-      <h3 style="padding-left:50px">Buying annual leave cost calculator</h3>
-      <p >Use this calculator to work out the total cost and cost per day of buying more annual leave.</p>
+      <h3 style="padding-left:50px" class='govuk-heading-m'>Buying annual leave cost calculator</h3>
+      <p class='govuk-!-margin-top-5'>Use this calculator to work out the total cost and cost per day of buying more annual leave.</p>
 
       <label>
         <p>What is your salary?</p>
@@ -90,7 +90,7 @@
     </div>
 
 <p></p>
-    <input type="submit" value="Calculate" class="button button2" style="height:50px">
+    <input type="submit" value="Calculate" class="button button2 govuk-body" style="height:50px">
 
   </form>
   <p></p>
@@ -104,8 +104,8 @@
 <!-- Block text starts -->
 
 <div class="txtblock key">
-  <h3 style="padding-left:50px">Key information</h3>
-  <ul class="">
+  <h3 style="padding-left:50px" class='govuk-heading-m'>Key information</h3>
+  <ul class="govuk-list govuk-list--bullet govuk-!-margin-top-5">
     <li>You give up or 'sacrifice' part of your salary in exchange for more annual leave, this is known as a salary sacrifice arrangement</li>
     <li>Payments are made from your gross salary, so you pay no tax or national insurance on the value of the extra annual leave</li>
     <li>As the cost of buying more annual leave comes out of your salary before tax is deducted, your amount of pensionable pay will be reduced</li>
@@ -121,9 +121,12 @@
 
   <!-- Block text starts -->
   <div class="txtblock">
-      <h2>Guidance for line managers</h2>
-      <a href="public/images/Holiday_buying_additional_line_manager_guide.pdf" target="_blank" >
-      <img src="public/images/icons/arrow.svg" style="margin:0px 8px 0 0">View and download pdf guidance</a>
+      <h2 class='govuk-heading-l'>Guidance for line managers</h2>
+      <div class='link-with-arrow govuk-body'>
+        <img src="public/images/icons/arrow.svg" style="margin:0px 8px 0 0">
+        <a href="public/images/Holiday_buying_additional_line_manager_guide.pdf" target="_blank" >
+        View and download pdf guidance</a>
+        </div>
   </div>
   <!-- Block text ends -->
 
@@ -145,56 +148,12 @@
 
     </div>
     <div class="govuk-grid-column-one-third">
-
-      <aside class="app-related-items" role="complementary">
-        <h2 class="govuk-heading-m" id="subsection-title">
-          In this section
-        </h2>
-        <nav role="navigation" aria-labelledby="subsection-title">
-          <ul class="govuk-list govuk-!-font-size-16">
-            <li>
-              <a href="book-leave">
-                Book annual leave
-              </a>
-            </li>
-
-            <li>
-              <a href="#">
-                Change annual leave
-              </a>
-            </li>
-
-            <li class="active">
-
-                Buy more annual leave
-
-            </li>
-
-
-            <li>
-              <a href="#">
-                Carry over annual leave
-              </a>
-            </li>
-            <li>
-              <a href="leave-allowance">
-                Annual leave allowance
-              </a>
-            </li>
-
-
-          </ul>
-        </nav>
-      </aside>
-
+      {% include "includes/in-this-section.html" %}
       {% include "includes/contact-help.html" %}
     </div>
 
   </div>
 
 <div style="height:80px"></div>
-
-
-
 
 {% endblock %}
