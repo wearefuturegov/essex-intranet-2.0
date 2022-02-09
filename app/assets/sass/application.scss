@@ -18,11 +18,13 @@ $govuk-font-family: Lexend, "HelveticaNeue", "Helvetica Neue", "Arial", "Helveti
 @import "patterns/related-items";
 
 // fg code
+@import "utils";
 @import "cookie-banner";
 @import "accordion";
 @import "ecc-button";
 @import "search-container";
 @import "hero";
+@import "header";
 
 .govuk-grid-column-one-quarter{
   padding-right:4px;
@@ -202,8 +204,8 @@ div .txtblock {
 }
 
 
-govuk-breadcrumbs a{
-  font-weight:300;
+.govuk-breadcrumbs a{
+	font-weight:300;
 }
 
 .timestamp {
@@ -373,28 +375,6 @@ input {
 }
 /*
 
-/* Header */
-
-/* Style the header with a grey background and some padding */
-.header {
-  overflow: hidden;
-  background-color: #E40037;
-  padding: 2px 5px 0 0;
-  display: flex;
-  align-items: center;
-  justify-content: flex-start;
-}
-
-/* Style the header links */
-.header a {
-  color: black;
-  text-align: center;
-  padding: 12px;
-  text-decoration: none;
-  font-size: 18px;
-  line-height: 25px;
-  border-radius: 4px;
-}
 /* Key info style*/
 
 .key
