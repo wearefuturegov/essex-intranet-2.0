@@ -1,6 +1,6 @@
 # Requirements
 
-The GOV.UK Prototype Kit runs on Mac, Windows and Linux. At a minimum you’ll need Node.js (install instructions below) and a web browser.
+The GOV.UK Prototype Kit runs on Mac, Windows and Linux. At a minimum you'll need Node.js (install instructions below) and a web browser.
 
 If you're using an M1 Mac ([certain Macs launched in 2020 and later](https://en.wikipedia.org/wiki/Apple_M1#Products_that_include_the_Apple_M1)), you might experience issues when you run the Prototype Kit. To get support, please [contact the Design System team](https://design-system.service.gov.uk/get-in-touch/).
 
@@ -19,11 +19,11 @@ You'll need:
 
 ## Terminal
 
-You'll need a terminal application to install, start and stop the kit. Using a terminal is sometimes called ‘using the command line’.
+You'll need a terminal application to install, start and stop the kit. Using a terminal is sometimes called ‘using the command line'.
 
 ### Mac users
 
-Macs come with `Terminal.app`. It’s located in the `Utilities` folder in the `Applications` folder. You can also find it using spotlight (magnifying glass icon in the top right) and typing 'terminal'.
+Macs come with `Terminal.app`. It's located in the `Utilities` folder in the `Applications` folder. You can also find it using spotlight (magnifying glass icon in the top right) and typing 'terminal'.
 
 ### Windows users
 
@@ -47,7 +47,7 @@ In terminal (Git Bash in Windows):
 ```
 node --version
 ```
-If it says `command not found` or `Error 0x2 starting node.exe --version` you don’t have Node and will need to download and install it.
+If it says `command not found` or `Error 0x2 starting node.exe --version` you don't have Node and will need to download and install it.
 
 If the version number starts with 16 you have the correct version installed.
 
@@ -67,13 +67,13 @@ Run the installer with all default options.
 
 ### Once Node is installed
 
-You’ll need to quit and restart the terminal to be able to use Node for the first time.
+You'll need to quit and restart the terminal to be able to use Node for the first time.
 
 To check it is installed correctly you can again run:
 ```
 node --version
 ```
 
-If it’s installed correctly it should show a number starting with 16.
+If it's installed correctly it should show a number starting with 16.
 
 <a href="install-the-kit.md" class="button">Next (install the kit)</a>

@@ -1,10 +1,10 @@
 # Setting up Git using the terminal
 
-Git helps track changes in code and lets you undo mistakes or identify bugs. It’s also used to collaborate with other people - so you can share your code with other designers and developers on your team (or with other teams!). Git is a type of version control software.
+Git helps track changes in code and lets you undo mistakes or identify bugs. It's also used to collaborate with other people - so you can share your code with other designers and developers on your team (or with other teams!). Git is a type of version control software.
 
 This guide will walk you through setting up a git repo (repository) and committing your work so that you can publish your prototype on the web.
 
-> You don’t *have* to use Git to use the Prototype Kit, but it will be really useful if you learn some basics.
+> You don't *have* to use Git to use the Prototype Kit, but it will be really useful if you learn some basics.
 
 > Git is not the same as GitHub. Git stores versions of your work, and lets you collaborate more easily with others. GitHub puts it all online with a nice web interface.
 
@@ -42,7 +42,7 @@ git branch -M main
 
 ## 3) Check the Git status
 
-It’s a good idea to run `git status` frequently. This tells you the current status - for example, if you made changes to files that haven’t been committed.
+It's a good idea to run `git status` frequently. This tells you the current status - for example, if you made changes to files that haven't been committed.
 
 In your prototype folder:
 ```
@@ -53,11 +53,11 @@ As this is a new git repo, all files in the kit will be listed as having changes
 
 ## 4) Doing your first commit
 
-There are two stages to committing your changes. The first is to select the specific files with changes you want to commit, called **‘staging’**. The second is to commit all the changes in ‘staging’.
+There are two stages to committing your changes. The first is to select the specific files with changes you want to commit, called **‘staging'**. The second is to commit all the changes in ‘staging'.
 
 ### Select files you want to commit
 
-As this is our first commit, we want to add **all** files to ‘staging’
+As this is our first commit, we want to add **all** files to ‘staging'
 
 #### Adding all files that have changes
 
@@ -70,9 +70,9 @@ git add .
 
 ### Check Git status
 
-Run `git status` to check the files you’ve got in the stage. You will see a list of all the files just added under the heading `Changes to be committed`.
+Run `git status` to check the files you've got in the stage. You will see a list of all the files just added under the heading `Changes to be committed`.
 
-### Commit the files in ‘staging’
+### Commit the files in ‘staging'
 
 Run:
 ```
@@ -88,10 +88,10 @@ Run `git status` again and it should say `Nothing to commit` - all the changes y
 
 ## 6) Learning Git
 
-We recommend doing a tutorial on Git basics. Once you’ve done that, the best thing is to keep using Git each day (commit at least one change, etc) so it becomes familiar to you. Ask developers on your team to help you until you’re comfortable on your own.
+We recommend doing a tutorial on Git basics. Once you've done that, the best thing is to keep using Git each day (commit at least one change, etc) so it becomes familiar to you. Ask developers on your team to help you until you're comfortable on your own.
 
 [GitHub tutorial on git](https://try.github.io/levels/1/challenges/1)
 
 [Advanced git tutorial](http://think-like-a-git.net/)
 
-> Git can be used via the command line or using an app. It’s up to you which you learn. Most developers use the command line, so if you’d like help from them, it’s often better to use that.
+> Git can be used via the command line or using an app. It's up to you which you learn. Most developers use the command line, so if you'd like help from them, it's often better to use that.

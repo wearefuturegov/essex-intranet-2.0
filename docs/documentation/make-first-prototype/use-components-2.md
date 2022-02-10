@@ -10,7 +10,7 @@
 
 1. Under `label`, change `text` from "Can you provide more detail?" to "What is your most impressive juggling trick?".
 2. Change the `id` and `name` to `most-impressive-trick`.
-3. We don’t need a hint, so remove it and the comma just before it.
+3. We don't need a hint, so remove it and the comma just before it.
 
 Your component code should now look like this:
 
@@ -30,4 +30,4 @@ Your page should now look like this:
 
 ![Screenshot of the question page with a textarea](/public/images/docs/tutorial-textarea.png)
 
-[Next (Show the user’s answers on your ‘Check answers’ page)](show-users-answers)
+[Next (Show the user's answers on your ‘Check answers' page)](show-users-answers)

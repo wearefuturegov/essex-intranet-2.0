@@ -1,6 +1,6 @@
 # Run the kit
 
-You’ll use the terminal to start and stop the kit.
+You'll use the terminal to start and stop the kit.
 
 ## Open the prototype folder in terminal
 
@@ -38,7 +38,7 @@ You should see the prototype welcome page.
 
 ## Quitting the kit
 
-It’s fine to leave the kit running for days or while your computer is asleep.
+It's fine to leave the kit running for days or while your computer is asleep.
 
 To quit the kit, in the terminal press the `ctrl` and `c` keys together.
 

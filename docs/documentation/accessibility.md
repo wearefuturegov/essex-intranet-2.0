@@ -28,7 +28,7 @@ The GOV.UK Prototype Kit team will review your request and get back to you in 2 
 
 ### Enforcement procedure
 
-The Equality and Human Rights Commission (EHRC) is responsible for enforcing the Public Sector Bodies (Websites and Mobile Applications) (No. 2) Accessibility Regulations 2018 (the ‘accessibility regulations’). If you’re not happy with how we respond to your complaint, [contact the Equality Advisory and Support Service (EASS)](https://www.equalityadvisoryservice.com/).
+The Equality and Human Rights Commission (EHRC) is responsible for enforcing the Public Sector Bodies (Websites and Mobile Applications) (No. 2) Accessibility Regulations 2018 (the ‘accessibility regulations'). If you're not happy with how we respond to your complaint, [contact the Equality Advisory and Support Service (EASS)](https://www.equalityadvisoryservice.com/).
 
 GDS is committed to making its websites accessible, in accordance with the Public Sector Bodies (Websites and Mobile Applications) (No. 2) Accessibility Regulations 2018.
 
@@ -80,7 +80,7 @@ The team aims to research the Prototype Kit website with a representative range 
 
 We also test to ensure they work with a broad range of browsers, devices and assistive technologies - including screen magnifiers, screen readers and speech recognition tools.
 
-When we publish new content, we’ll continue to make sure that it meets accessibility standards.
+When we publish new content, we'll continue to make sure that it meets accessibility standards.
 
 
 ### Preparation of this accessibility statement

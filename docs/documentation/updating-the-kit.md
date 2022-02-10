@@ -13,9 +13,9 @@ Tell us as much as you can about the issue you're having, and the computer and o
 
 ## Updating to the latest version
 
-### Find what version you’re using
+### Find what version you're using
 
-In Finder on Mac or Windows Explorer go to your prototype folder and open the file `VERSION.txt`. This will show what version of the prototype kit you’re using.
+In Finder on Mac or Windows Explorer go to your prototype folder and open the file `VERSION.txt`. This will show what version of the prototype kit you're using.
 
 - If your prototype is version 8 or before, then contact the GOV.UK Prototype team for help with updating it
 - If your prototype is version 9, 10 or 11, you can update to version 12 by following the steps on this page
@@ -58,14 +58,14 @@ Run `npm install PACKAGE-NAME` for each package that's missing in the new file.
 
 ## Gulp error message
 
-If you use a GDS managed device, you no longer have permission to run Gulp (a JavaScript toolkit used by Prototype Kit). We’ve updated the Prototype Kit so if you install it now, it runs Gulp without having to install it separately.
+If you use a GDS managed device, you no longer have permission to run Gulp (a JavaScript toolkit used by Prototype Kit). We've updated the Prototype Kit so if you install it now, it runs Gulp without having to install it separately.
 
 If you want to run an existing prototype made before July 2021, you may see an error message about not having permission to run Gulp.
 
 To fix this:
 
 1. open a code editor, like Atom
-2. from your prototype project folder, open the ‘start.js’ file
+2. from your prototype project folder, open the ‘start.js' file
 3. go to the line that starts with: `var gulp = spawn`
 4. replace the entire line with:
 

@@ -4,7 +4,7 @@
 
 The simplest way to get the kit is to <a href="/docs/download" data-link="download">download it as a zip</a>.
 
-You'll use a new copy of the kit for each new prototype you make. That way your prototypes don’t interfere with each other.
+You'll use a new copy of the kit for each new prototype you make. That way your prototypes don't interfere with each other.
 
 Make sure you are installing the kit on a local drive. Do not install the kit on a cloud-based drive (for example, Dropbox, Microsoft OneDrive), as this may cause permissions issues.
 
@@ -18,7 +18,7 @@ Create a folder called `prototypes` in your `Documents` folder.
 
 Unzip the kit you downloaded - you should end up with a folder called `govuk-prototype-kit` followed by the version number.
 
-Rename the folder to something descriptive for your prototype. For this guide, we’ll use `juggling-licence`.
+Rename the folder to something descriptive for your prototype. For this guide, we'll use `juggling-licence`.
 
 Move the folder into your `prototypes` folder.
 
@@ -35,7 +35,7 @@ There are a few commands you‘ll have to run in the terminal to use the Prototy
 * `cd [name of directory]`  = change to [name of directory]
 * `cd ~`  = go to your home directory
 * `ls` = list all the folders and files in a directory
-* `pwd` = print working directory tells you what directory you’re in 
+* `pwd` = print working directory tells you what directory you're in 
 * press up and down on the keyboard to go through previous commands
 * `npm start`  = start the Prototype Kit (you need to be in your prototype folder) 
 

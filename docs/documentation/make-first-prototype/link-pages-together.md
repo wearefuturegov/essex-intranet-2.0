@@ -33,6 +33,6 @@ This time it's a real HTML button, not a link. Buttons submit form data - the UR
 
 Go to http://localhost:3000/juggling-trick and select **Continue** to check the button works.
 
-The 'Check answers' page template links to the ‘Confirmation’ page by default. So you do not need to change the ‘Check answers’ page.
+The 'Check answers' page template links to the ‘Confirmation' page by default. So you do not need to change the ‘Check answers' page.
 
 [Next (use components from the Design System)](use-components)

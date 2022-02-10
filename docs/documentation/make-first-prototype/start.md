@@ -26,7 +26,7 @@ You'll also need a code editor. You can use any editor, but the instructions in 
 
 ## Give feedback
 
-If you would like to give feedback about this tutorial, or you’ve got a question, get in touch with the GOV.UK Design System team:
+If you would like to give feedback about this tutorial, or you've got a question, get in touch with the GOV.UK Design System team:
 
 - on the <a class="govuk-link" href="https://ukgovernmentdigital.slack.com/app_redirect?channel=prototype-kit" data-hsupport="slack">#prototype-kit channel on cross-government Slack</a>.
 

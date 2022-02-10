@@ -1,21 +1,21 @@
 # Let the user change their answers
 
-## Make the ‘Change’ links work
+## Make the ‘Change' links work
 
-Make the **Change** links on the ‘Check answers’ page work by adding the right links.
+Make the **Change** links on the ‘Check answers' page work by adding the right links.
 
 1. In the `<a>` tag under `{{ data['how-many-balls'] }}`, change the href attribute from `#` to `/juggling-balls`
 2. In the `<a>` tag under `{{ data['most-impressive-trick'] }}`, change the href attribute from `#` to `/juggling-trick`
 
-If you select a **Change** link, you’ll go back to the right question page, but your answer will not appear yet.
+If you select a **Change** link, you'll go back to the right question page, but your answer will not appear yet.
 
-## Show the user’s answer in question 1
+## Show the user's answer in question 1
 
 Radios and checkboxes have a `checked` option to set whether they are selected (checked) or not when the page loads.
 
 Open the `juggling-balls.html` file in your `app/views` folder.
 
-For each of the `items`, we’ll add a `checked` value, like this:
+For each of the `items`, we'll add a `checked` value, like this:
 
 ```
     {
@@ -38,7 +38,7 @@ In each case make sure the spelling is exactly the same as the `value`.
 
 Go to [http://localhost:3000/juggling-balls](http://localhost:3000/juggling-balls) and check the journey works by selecting an answer, continuing to the next page, then going back.
 
-## Show the user’s answer in question 2
+## Show the user's answer in question 2
 
 Text inputs and textareas have a `value` to set what text appears in them when the page loads.
 
